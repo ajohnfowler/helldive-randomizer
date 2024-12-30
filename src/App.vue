@@ -1,13 +1,17 @@
-<script setup lang="ts">
-import { RouterLink, RouterView } from 'vue-router'
+<script setup>
+import Loadout from '@/components/Loadout.vue';
 </script>
 
 <template>
-  <header>
+  <main>
     <h1>Helldive Randomizer</h1>
-  </header>
 
-  <RouterView />
+    <Loadout />
+  </main>
 </template>
 
-<style scoped></style>
+<style>
+h1 {
+  text-align: center;
+}
+</style>
