@@ -1,35 +1,52 @@
 [
     {
-        "name": "G-6 Frag"
+        "group": "Standard",
+        "weapons": [
+            {
+                "name": "G-6 Frag",
+                "image": ""
+            },
+            {
+                "name": "G-12 High Explosive",
+                "image": ""
+            },
+            {
+                "name": "G-10 Incendiary",
+                "image": ""
+            }
+        ]
     },
     {
-        "name": "G-6 Frag"
-    },
-    {
-        "name": "G-6 Frag"
-    },
-    {
-        "name": "G-6 Frag"
-    },
-    {
-        "name": "G-12 High Explosive"
-    },
-    {
-        "name": "G-10 Incendiary"
-    },
-    {
-        "name": "G-16 Impact"
-    },
-    {
-        "name": "G-13 Incendiary Impact"
-    },
-    {
-        "name": "G-3 Smoke"
-    },
-    {
-        "name": "G-23 Stun"
-    },
-    {
-        "name": "G-123 Thermite"
+        "group": "Special",
+        "weapons": [
+            {
+                "name": "G-16 Impact",
+                "image": ""
+            },
+            {
+                "name": "G-13 Incendiary Impact",
+                "image": ""
+            },
+            {
+                "name": "G-23 Stun",
+                "image": ""
+            },
+            {
+                "name": "G-4 Gas",
+                "image": ""
+            },
+            {
+                "name": "G-3 Smoke",
+                "image": ""
+            },
+            {
+                "name": "G-123 Thermite",
+                "image": ""
+            },
+            {
+                "name": "K-2 Throwing Knife",
+                "image": ""
+            }
+        ]
     }
 ]

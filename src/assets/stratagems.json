@@ -1,35 +1,174 @@
 [
     {
-        "name": "G-6 Frag"
+        "group": "Assult Rifle",
+        "weapons": [
+            {
+                "name": "AR-23 Liberator",
+                "image": ""
+            },
+            {
+                "name": "AR-23P Liberator Penetrator",
+                "image": ""
+            },
+            {
+                "name": "AR-23C Liberator Concussive",
+                "image": ""
+            },
+            {
+                "name": "StA-52 Assault Rifle",
+                "image": ""
+            },
+            {
+                "name": "AR-23A Liberator Carbine",
+                "image": ""
+            },
+            {
+                "name": "AR-61 Tenderizer",
+                "image": ""
+            },
+            {
+                "name": "BR-14 Adjudicator",
+                "image": ""
+            }
+        ]
     },
     {
-        "name": "G-6 Frag"
+        "group": "Marksman Rifle",
+        "weapons": [
+            {
+                "name": "R-2124 Constitution",
+                "image": ""
+            },
+            {
+                "name": "R-63 Diligence",
+                "image": ""
+            },
+            {
+                "name": "R-63CS Diligence Counter Sniper",
+                "image": ""
+            }
+        ]
     },
     {
-        "name": "G-6 Frag"
+        "group": "Sniper Rifle",
+        "weapons": [
+            {
+                "name": "PLAS-39 Accelerator Rifle",
+                "image": ""
+            }
+        ]
     },
     {
-        "name": "G-6 Frag"
+        "group": "Submachine Gun",
+        "weapons": [
+            {
+                "name": "MP-98 Knight",
+                "image": ""
+            },
+            {
+                "name": "StA-11 SMG",
+                "image": ""
+            },
+            {
+                "name": "SMG-32 Reprimand",
+                "image": ""
+            },
+            {
+                "name": "SMG-37 Defender",
+                "image": ""
+            },
+            {
+                "name": "SMG-72 Pummeler",
+                "image": ""
+            }
+        ]
     },
     {
-        "name": "G-12 High Explosive"
+        "group": "Shotgun",
+        "weapons": [
+            {
+                "name": "SG-8 Punisher",
+                "image": ""
+            },
+            {
+                "name": "SG-8S Slugger",
+                "image": ""
+            },
+            {
+                "name": "SG-20 Halt",
+                "image": ""
+            },
+            {
+                "name": "SG-451 Cookout",
+                "image": ""
+            },
+            {
+                "name": "SG-225 Breaker",
+                "image": ""
+            },
+            {
+                "name": "SG-225SP Breaker Spray & Pray",
+                "image": ""
+            },
+            {
+                "name": "SG-225IE Breaker Incendiary",
+                "image": ""
+            }
+        ]
     },
     {
-        "name": "G-10 Incendiary"
+        "group": "Explosive",
+        "weapons": [
+            {
+                "name": "CB-9 Exploding Crossbow",
+                "image": ""
+            },
+            {
+                "name": "R-36 Eruptor",
+                "image": ""
+            }
+        ]
     },
     {
-        "name": "G-16 Impact"
+        "group": "Energy-Based",
+        "weapons": [
+            {
+                "name": "SG-8P Punisher Plasma",
+                "image": ""
+            },
+            {
+                "name": "ARC-12 Blitzer",
+                "image": ""
+            },
+            {
+                "name": "LAS-5 Scythe",
+                "image": ""
+            },
+            {
+                "name": "LAS-16 Sickle",
+                "image": ""
+            },
+            {
+                "name": "PLAS-1 Scorcher",
+                "image": ""
+            },
+            {
+                "name": "PLAS-101 Purifier",
+                "image": ""
+            }
+        ]
     },
     {
-        "name": "G-13 Incendiary Impact"
-    },
-    {
-        "name": "G-3 Smoke"
-    },
-    {
-        "name": "G-23 Stun"
-    },
-    {
-        "name": "G-123 Thermite"
+        "group": "Speical",
+        "weapons": [
+            {
+                "name": "FLAM-66 Torcher",
+                "image": ""
+            },
+            {
+                "name": "JAR-5 Dominator",
+                "image": ""
+            }
+        ]
     }
 ]

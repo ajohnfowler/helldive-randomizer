@@ -1,35 +1,65 @@
 [
     {
-        "name": "G-6 Frag"
+        "group": "Pistol",
+        "weapons": [
+            {
+                "name": "P-2 Peacemaker",
+                "image": ""
+            },
+            {
+                "name": "P-19 Redeemer",
+                "image": ""
+            },
+            {
+                "name": "P-113 Verdict",
+                "image": ""
+            },
+            {
+                "name": "P-4 Senator",
+                "image": ""
+            }
+        ]
     },
     {
-        "name": "G-6 Frag"
+        "group": "Melee",
+        "weapons": [
+            {
+                "name": "CQC-19 Stun Lance",
+                "image": ""
+            },
+            {
+                "name": "CQC-30 Stun Baton",
+                "image": ""
+            }
+        ]
     },
     {
-        "name": "G-6 Frag"
-    },
-    {
-        "name": "G-6 Frag"
-    },
-    {
-        "name": "G-12 High Explosive"
-    },
-    {
-        "name": "G-10 Incendiary"
-    },
-    {
-        "name": "G-16 Impact"
-    },
-    {
-        "name": "G-13 Incendiary Impact"
-    },
-    {
-        "name": "G-3 Smoke"
-    },
-    {
-        "name": "G-23 Stun"
-    },
-    {
-        "name": "G-123 Thermite"
+        "group": "Special",
+        "weapons": [
+            {
+                "name": "P-11 Stim Pistol",
+                "image": ""
+            },
+            {
+                "name": "SG-22 Bushwhacker",
+                "image": ""
+            },
+            {
+                "name": "P-72 Crisper",
+                "image": ""
+            },
+            {
+                "name": "GP-31 Grenade Pistol",
+                "image": ""
+            },
+            {
+                "name": "LAS-7 Dagger",
+                "image": ""
+            },
+            {
+                "name": "PLAS-15 Loyalist",
+                "image": ""
+            }
+        ]
     }
 ]
