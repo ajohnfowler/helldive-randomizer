@@ -1,7 +1,7 @@
 [
     {
         "group": "Pistol",
-        "weapons": [
+        "items": [
             {
                 "name": "P-2 Peacemaker",
                 "image": ""
@@ -22,7 +22,7 @@
     },
     {
         "group": "Melee",
-        "weapons": [
+        "items": [
             {
                 "name": "CQC-19 Stun Lance",
                 "image": ""
@@ -35,7 +35,7 @@
     },
     {
         "group": "Special",
-        "weapons": [
+        "items": [
             {
                 "name": "P-11 Stim Pistol",
                 "image": ""

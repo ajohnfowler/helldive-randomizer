@@ -8,5 +8,7 @@ export default {
 </script>
 
 <template>
-    {{  cardData.name }}
+    <div class="card">
+        {{ cardData.name }}
+    </div>
 </template>

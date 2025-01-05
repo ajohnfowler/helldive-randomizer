@@ -3,12 +3,7 @@ import { useStore } from '@/stores/store';
 import Card from './Card.vue';
 
 const store = useStore()
-
 store.loadData()
-
-let primary = store.getPrimary()
-let secondary = store.getSecondary()
-let throwable = store.getThrowable()
 </script>
 
 <template>

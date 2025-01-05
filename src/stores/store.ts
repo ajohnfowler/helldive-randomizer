@@ -5,15 +5,28 @@ import primaries_data from "@/assets/primaries.json";
 import secondaries_data from "@/assets/secondaries.json";
 import throwables_data from "@/assets/throwables.json";
 
-import { Weapon } from "@/models/weapon";
-import { Stratagem } from "@/models/stratagem";
+export type Group = {
+  group: string;
+  items: Item[];
+};
+
+export type Item = {
+  name: string;
+  image: string;
+  unlocked: boolean;
+};
+
+export type card = {
+  name: string;
+  image: string;
+};
 
 export const useStore = defineStore("store", {
   state: () => ({
-    primaries: [] as Weapon[],
-    secondaries: [] as Weapon[],
-    throwables: [] as Weapon[],
-    stratagems: [] as Stratagem[],
+    primaries: [] as Group[],
+    secondaries: [] as Group[],
+    throwables: [] as Group[],
+    stratagems: [] as Group[],
   }),
 
   getters: {
@@ -27,13 +40,13 @@ export const useStore = defineStore("store", {
       state.throwables[Math.floor(Math.random() * state.throwables.length)],
 
     getStratagems: (state) => {
-      let list = []
+      let list = [];
 
       let temp = state.stratagems;
       for (let i = 0; i <= 6; i++) {
-        list.push()
+        list.push();
       }
-    }
+    },
   },
 
   actions: {
@@ -42,5 +55,7 @@ export const useStore = defineStore("store", {
       this.secondaries = secondaries_data;
       this.throwables = throwables_data;
     },
+
+    getLoadout() {},
   },
 });

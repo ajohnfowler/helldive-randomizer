@@ -1,7 +1,7 @@
 [
     {
         "group": "Assult Rifle",
-        "weapons": [
+        "items": [
             {
                 "name": "AR-23 Liberator",
                 "image": ""
@@ -34,7 +34,7 @@
     },
     {
         "group": "Marksman Rifle",
-        "weapons": [
+        "items": [
             {
                 "name": "R-2124 Constitution",
                 "image": ""
@@ -51,7 +51,7 @@
     },
     {
         "group": "Sniper Rifle",
-        "weapons": [
+        "items": [
             {
                 "name": "PLAS-39 Accelerator Rifle",
                 "image": ""
@@ -60,7 +60,7 @@
     },
     {
         "group": "Submachine Gun",
-        "weapons": [
+        "items": [
             {
                 "name": "MP-98 Knight",
                 "image": ""
@@ -85,7 +85,7 @@
     },
     {
         "group": "Shotgun",
-        "weapons": [
+        "items": [
             {
                 "name": "SG-8 Punisher",
                 "image": ""
@@ -118,7 +118,7 @@
     },
     {
         "group": "Explosive",
-        "weapons": [
+        "items": [
             {
                 "name": "CB-9 Exploding Crossbow",
                 "image": ""
@@ -131,7 +131,7 @@
     },
     {
         "group": "Energy-Based",
-        "weapons": [
+        "items": [
             {
                 "name": "SG-8P Punisher Plasma",
                 "image": ""
@@ -160,7 +160,7 @@
     },
     {
         "group": "Speical",
-        "weapons": [
+        "items": [
             {
                 "name": "FLAM-66 Torcher",
                 "image": ""
