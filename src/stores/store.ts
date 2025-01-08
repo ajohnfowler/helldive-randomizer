@@ -6,7 +6,7 @@ import secondaries_data from "@/assets/secondaries.json";
 import throwables_data from "@/assets/throwables.json";
 
 export type Group = {
-  group: string;
+  name: string;
   items: Item[];
 };
 

@@ -1,5 +1,4 @@
 <script>
-
 export default {
     props: [
         'cardData'
@@ -9,6 +8,6 @@ export default {
 
 <template>
     <div class="card">
-        {{ cardData.name }}
+        <!-- {{ cardData.name }} -->
     </div>
 </template>

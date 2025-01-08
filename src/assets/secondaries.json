@@ -1,6 +1,6 @@
 [
     {
-        "group": "Pistol",
+        "name": "Pistol",
         "items": [
             {
                 "name": "P-2 Peacemaker",
@@ -21,7 +21,7 @@
         ]
     },
     {
-        "group": "Melee",
+        "name": "Melee",
         "items": [
             {
                 "name": "CQC-19 Stun Lance",
@@ -34,7 +34,7 @@
         ]
     },
     {
-        "group": "Special",
+        "name": "Special",
         "items": [
             {
                 "name": "P-11 Stim Pistol",

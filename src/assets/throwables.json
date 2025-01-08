@@ -1,6 +1,6 @@
 [
     {
-        "group": "Standard",
+        "name": "Standard",
         "items": [
             {
                 "name": "G-6 Frag",
@@ -17,7 +17,7 @@
         ]
     },
     {
-        "group": "Special",
+        "name": "Special",
         "items": [
             {
                 "name": "G-16 Impact",

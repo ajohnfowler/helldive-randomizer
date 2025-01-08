@@ -1,36 +1,38 @@
 <script setup>
 import { useStore } from '@/stores/store';
 import Card from './Card.vue';
+import Button from 'primevue/button';
 
 const store = useStore()
-store.loadData()
 </script>
 
 <template>
-    <div class="equipment">
-        <ul>
-            <li>
-                <Card :card-data="primary" />
-            </li>
-            <li>
-                <Card :card-data="secondary" />
-            </li>
-            <li>
-                <Card :card-data="throwable" />
-            </li>
-        </ul>
-    </div>
+    <div class="container">
+        <div class="equipment">
+            <ul>
+                <li>
+                    <Card :card-data="primary" />
+                </li>
+                <li>
+                    <Card :card-data="secondary" />
+                </li>
+                <li>
+                    <Card :card-data="throwable" />
+                </li>
+            </ul>
+        </div>
 
-    <div class="stratagems">
-        <ul>
-            <li v-for="index in 5" :key="index">
-                Strat {{ index }}
-            </li>
-        </ul>
-    </div>
+        <div class="stratagems">
+            <ul>
+                <li v-for="index in 5" :key="index">
+                    Strat {{ index }}
+                </li>
+            </ul>
+        </div>
 
-    <div class="controls">
-        <button @click=""></button>
+        <div class="controls">
+            <Button @click="" label="Get Assigned Loadout" />
+        </div>
     </div>
 </template>
 
