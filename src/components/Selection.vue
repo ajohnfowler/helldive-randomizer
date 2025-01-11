@@ -2,20 +2,7 @@
 import { useStore } from '@/stores/store';
 import { ref } from "vue";
 
-import Tabs from 'primevue/tabs';
-import TabList from 'primevue/tablist';
-import Tab from 'primevue/tab';
-import TabPanels from 'primevue/tabpanels';
-import TabPanel from 'primevue/tabpanel';
-
-import Listbox from 'primevue/listbox';
-
 const store = useStore()
-
-const ownedPrimaries = ref();
-const ownedSecondaries = ref();
-const ownedThrowables = ref();
-const ownedStratagems = ref();
 </script>
 
 <template>
@@ -29,47 +16,19 @@ const ownedStratagems = ref();
             </TabList>
             <TabPanels>
                 <TabPanel class="panel" value="0">
-                    <Listbox v-model="ownedPrimaries" :options="store.primaries" multiple optionLabel="name"
-                        optionGroupLabel="name" optionGroupChildren="items">
-                        <template #optiongroup="slotProps">
-                            <div class="flex items-center">
-                                <div>{{ slotProps.option.name }}</div>
-                            </div>
-                        </template>
-                    </Listbox>
+
                 </TabPanel>
 
-                <TabPanel value="1">
-                    <Listbox v-model="ownedSecondaries" :options="store.secondaries" multiple optionLabel="name"
-                        optionGroupLabel="name" optionGroupChildren="items">
-                        <template #optiongroup="slotProps">
-                            <div class="flex items-center">
-                                <div>{{ slotProps.option.name }}</div>
-                            </div>
-                        </template>
-                    </Listbox>
+                <TabPanel class="panel" value="1">
+
                 </TabPanel>
 
-                <TabPanel value="2">
-                    <Listbox v-model="ownedThrowables" :options="store.throwables" multiple optionLabel="name"
-                        optionGroupLabel="name" optionGroupChildren="items">
-                        <template #optiongroup="slotProps">
-                            <div class="flex items-center">
-                                <div>{{ slotProps.option.name }}</div>
-                            </div>
-                        </template>
-                    </Listbox>
+                <TabPanel class="panel" value="2">
+
                 </TabPanel>
 
-                <TabPanel value="3">
-                    <Listbox v-model="ownedStratagems" :options="store.stratagems" multiple optionLabel="name"
-                        optionGroupLabel="name" optionGroupChildren="items">
-                        <template #optiongroup="slotProps">
-                            <div class="flex items-center">
-                                <div>{{ slotProps.option.name }}</div>
-                            </div>
-                        </template>
-                    </Listbox>
+                <TabPanel class="panel" value="3">
+
                 </TabPanel>
             </TabPanels>
         </Tabs>

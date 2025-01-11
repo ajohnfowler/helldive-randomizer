@@ -1,172 +1,284 @@
 [
     {
-        "name": "Assult Rifle",
+        "name": "Patriotic Administration Center",
         "items": [
             {
-                "name": "AR-23 Liberator",
+                "name": "Machine Gun",
                 "image": ""
             },
             {
-                "name": "AR-23P Liberator Penetrator",
+                "name": "Anti-Materiel Rifle",
                 "image": ""
             },
             {
-                "name": "AR-23C Liberator Concussive",
+                "name": "Stalwart",
                 "image": ""
             },
             {
-                "name": "StA-52 Assault Rifle",
+                "name": "Expendable Anti-Tank",
                 "image": ""
             },
             {
-                "name": "AR-23A Liberator Carbine",
+                "name": "Recoilless Rifle",
                 "image": ""
             },
             {
-                "name": "AR-61 Tenderizer",
+                "name": "Flamethrower",
                 "image": ""
             },
             {
-                "name": "BR-14 Adjudicator",
+                "name": "Autocannon",
+                "image": ""
+            },
+            {
+                "name": "Heavy Machine Gun",
+                "image": ""
+            },
+            {
+                "name": "Airburst Rocket Launcher",
+                "image": ""
+            },
+            {
+                "name": "Commando",
+                "image": ""
+            },
+            {
+                "name": "Railgun",
+                "image": ""
+            },
+            {
+                "name": "Spear",
+                "image": ""
+            },
+            {
+                "name": "StA-X3 W.A.S.P. Launcher",
                 "image": ""
             }
         ]
     },
     {
-        "name": "Marksman Rifle",
+        "name": "Orbital Cannons",
         "items": [
             {
-                "name": "R-2124 Constitution",
+                "name": "Orbital Gatling Barrage",
                 "image": ""
             },
             {
-                "name": "R-63 Diligence",
+                "name": "Oribital Airburst Strike",
                 "image": ""
             },
             {
-                "name": "R-63CS Diligence Counter Sniper",
+                "name": "Orbital 120MM HE Barrage",
+                "image": ""
+            },
+            {
+                "name": "Orbital 380MM HE Barrage",
+                "image": ""
+            },
+            {
+                "name": "Orbital Walking Barrage",
+                "image": ""
+            },
+            {
+                "name": "Orbital Laser",
+                "image": ""
+            },
+            {
+                "name": "Orbital Napalm Barrage",
+                "image": ""
+            },
+            {
+                "name": "Oribital Railcannon Strike",
                 "image": ""
             }
         ]
     },
     {
-        "name": "Sniper Rifle",
+        "name": "Hanger",
         "items": [
             {
-                "name": "PLAS-39 Accelerator Rifle",
+                "name": "Eagle Strafing Run",
+                "image": ""
+            },
+            {
+                "name": "Eagle Airstrike",
+                "image": ""
+            },
+            {
+                "name": "Eagle Cluster Bomb",
+                "image": ""
+            },
+            {
+                "name": "Eagle Napalm Airstrike",
+                "image": ""
+            },
+            {
+                "name": "Eagle Smoke Strike",
+                "image": ""
+            },
+            {
+                "name": "Eagle 110MM Rocket Pods",
+                "image": ""
+            },
+            {
+                "name": "Eagle 500KG Bomb",
+                "image": ""
+            },
+            {
+                "name": "Fast Recon Vehicle",
                 "image": ""
             }
         ]
     },
     {
-        "name": "Submachine Gun",
+        "name": "Bridge",
         "items": [
             {
-                "name": "MP-98 Knight",
+                "name": "Orbital Precision Strike",
                 "image": ""
             },
             {
-                "name": "StA-11 SMG",
+                "name": "Orbital Gas Strike",
                 "image": ""
             },
             {
-                "name": "SMG-32 Reprimand",
+                "name": "Orbital EMS Strike",
                 "image": ""
             },
             {
-                "name": "SMG-37 Defender",
+                "name": "Orbital Smoke Strike",
                 "image": ""
             },
             {
-                "name": "SMG-72 Pummeler",
+                "name": "HMG Emplacement",
+                "image": ""
+            },
+            {
+                "name": "Shield Generator Relay",
+                "image": ""
+            },
+            {
+                "name": "Tesla Tower",
                 "image": ""
             }
         ]
     },
     {
-        "name": "Shotgun",
+        "name": "Engineering Bay",
         "items": [
             {
-                "name": "SG-8 Punisher",
+                "name": "Anti-Personal Minefield",
                 "image": ""
             },
             {
-                "name": "SG-8S Slugger",
+                "name": "Supply Pack",
                 "image": ""
             },
             {
-                "name": "SG-20 Halt",
+                "name": "Granade Launcher",
                 "image": ""
             },
             {
-                "name": "SG-451 Cookout",
+                "name": "Laser Cannon",
                 "image": ""
             },
             {
-                "name": "SG-225 Breaker",
+                "name": "Incendiary Mines",
                 "image": ""
             },
             {
-                "name": "SG-225SP Breaker Spray & Pray",
+                "name": "\"Guard Dog\" Rover",
                 "image": ""
             },
             {
-                "name": "SG-225IE Breaker Incendiary",
+                "name": "Ballistic Shield Backpack",
+                "image": ""
+            },
+            {
+                "name": "Arc Thrower",
+                "image": ""
+            },
+            {
+                "name": "Anti-Tank Mines",
+                "image": ""
+            },
+            {
+                "name": "Quasar Cannon",
+                "image": ""
+            },
+            {
+                "name": "Shield Generator Pack",
                 "image": ""
             }
         ]
     },
     {
-        "name": "Explosive",
+        "name": "Robotics Workshop",
         "items": [
             {
-                "name": "CB-9 Exploding Crossbow",
+                "name": "Machine Gun Sentry",
                 "image": ""
             },
             {
-                "name": "R-36 Eruptor",
+                "name": "Gatling Sentry",
+                "image": ""
+            },
+            {
+                "name": "Mortar Sentry",
+                "image": ""
+            },
+            {
+                "name": "\"Guard Dog\"",
+                "image": ""
+            },
+            {
+                "name": "Autocannon Sentry",
+                "image": ""
+            },
+            {
+                "name": "Rocket Sentry",
+                "image": ""
+            },
+            {
+                "name": "EMS Mortar Sentry",
+                "image": ""
+            },
+            {
+                "name": "Partiot Exosuit",
+                "image": ""
+            },
+            {
+                "name": "Emancipator Exosuit",
                 "image": ""
             }
         ]
     },
     {
-        "name": "Energy-Based",
+        "name": "Chemical Agents",
         "items": [
             {
-                "name": "SG-8P Punisher Plasma",
+                "name": "Sterilizer",
                 "image": ""
             },
             {
-                "name": "ARC-12 Blitzer",
-                "image": ""
-            },
-            {
-                "name": "LAS-5 Scythe",
-                "image": ""
-            },
-            {
-                "name": "LAS-16 Sickle",
-                "image": ""
-            },
-            {
-                "name": "PLAS-1 Scorcher",
-                "image": ""
-            },
-            {
-                "name": "PLAS-101 Purifier",
+                "name": "\"Guard Dog\" Dog Breath",
                 "image": ""
             }
         ]
     },
     {
-        "name": "Speical",
+        "name": "Urban Legends",
         "items": [
             {
-                "name": "FLAM-66 Torcher",
+                "name": "Directional Shield",
                 "image": ""
             },
             {
-                "name": "JAR-5 Dominator",
+                "name": "Flame Sentry",
+                "image": ""
+            },
+            {
+                "name": "Anti-Tank Emplacement",
                 "image": ""
             }
         ]

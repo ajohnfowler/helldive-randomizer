@@ -1,13 +1,16 @@
-<script>
-export default {
-    props: [
-        'cardData'
-    ]
-}
+<script setup>
+defineProps(['data']);
 </script>
 
 <template>
     <div class="card">
-        <!-- {{ cardData.name }} -->
+        <img width="100px" height="100px">
+        <p>{{ data.name.toUpperCase() }}</p>
     </div>
 </template>
+
+<style scoped>
+.card {
+    text-align: center;
+}
+</style>
