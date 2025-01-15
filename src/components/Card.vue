@@ -4,7 +4,7 @@ defineProps(['data']);
 
 <template>
     <div class="card">
-        <img width="100px" height="100px">
+        <img :src="'https://helldivers.wiki.gg/images/0/0e/' + data.image + '_Stratagem_Icon.png'">
         <p>{{ data.name.toUpperCase() }}</p>
     </div>
 </template>
@@ -12,5 +12,16 @@ defineProps(['data']);
 <style scoped>
 .card {
     text-align: center;
+    width: 150px;
+    margin: auto;
+}
+
+img {
+    height: 100px;
+    width: 100px;
+}
+
+p {
+    height: 2lh;
 }
 </style>
