@@ -6,56 +6,76 @@ import secondaries_data from "@/assets/secondaries.json";
 import throwables_data from "@/assets/throwables.json";
 import stratagems_data from "@/assets/stratagems.json";
 
+export type Section = {
+  name: string;
+  locked: boolean;
+  groups: Group[];
+};
+
 export type Group = {
   name: string;
+  locked: boolean;
   items: Item[];
 };
 
 export type Item = {
   name: string;
   image: string;
-  unlocked: boolean;
-};
-
-export type card = {
-  name: string;
-  image: string;
+  locked: boolean;
+  backpack: boolean;
+  vehicle: boolean;
 };
 
 export const useStore = defineStore("store", {
   state: () => ({
-    primaries: [] as Group[],
-    secondaries: [] as Group[],
-    throwables: [] as Group[],
-    stratagems: [] as Group[],
+    sections: [] as Section[],
   }),
-
-  // getters: {
-  //   getPrimary: (state) =>
-  //     state.primaries[Math.floor(Math.random() * state.primaries.length)],
-
-  //   getSecondary: (state) =>
-  //     state.secondaries[Math.floor(Math.random() * state.secondaries.length)],
-
-  //   getThrowable: (state) =>
-  //     state.throwables[Math.floor(Math.random() * state.throwables.length)],
-
-  //   getStratagems: (state) => {
-  //     let list = [];
-
-  //     let temp = state.stratagems;
-  //     for (let i = 0; i <= 6; i++) {
-  //       list.push();
-  //     }
-  //   },
-  // },
 
   actions: {
     loadData() {
-      this.primaries = primaries_data;
-      this.secondaries = secondaries_data;
-      this.throwables = throwables_data;
-      this.stratagems = stratagems_data;
+      this.sections.push({
+        name: "primaries",
+        locked: false,
+        groups: primaries_data,
+      });
+
+      this.sections.push({
+        name: "secondaries",
+        locked: false,
+        groups: secondaries_data,
+      });
+
+      this.sections.push({
+        name: "throwables",
+        locked: false,
+        groups: throwables_data,
+      });
+
+      this.sections.push({
+        name: "stratagems",
+        locked: false,
+        groups: stratagems_data,
+      });
+    },
+
+    toggleGroup(group) {
+      group.locked = !group.locked;
+
+      group.items.forEach((item) => {
+        item.locked = group.locked;
+      });
+    },
+
+    toggleItem(group, item) {
+      item.locked = !item.locked;
+
+      group.locked = true;
+      group.items.forEach((x) => {
+        if (!x.locked) {
+          group.locked = false;
+          console.log(x.locked);
+        }
+      });
     },
   },
 });

@@ -9,13 +9,16 @@ body {
   font-style: normal;
   text-align: center;
   line-height: 1.5;
+  text-transform: uppercase;
 
   background-color: rgb(30, 30, 30);
-  color: whitesmoke
+  color: gray;
+  margin: 0;
+  padding: 0;
 }
 
 body.sb-expanded {
-  --sb-width: 20rem;
+  --sb-width: 25rem;
 }
 
 header {

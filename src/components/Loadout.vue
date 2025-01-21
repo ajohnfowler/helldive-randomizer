@@ -1,4 +1,6 @@
 <script setup>
+import Button from 'primevue/button';
+
 import { useStore } from '@/stores/store';
 import Card from './Card.vue';
 import { reactive } from 'vue';
@@ -7,7 +9,11 @@ const store = useStore()
 
 const state = reactive(
     {
-        loadout: {}
+        loadout: {},
+
+        maxSupports: 1,
+        maxBackpacks: 1,
+        maxVehicles: 1
     }
 )
 
@@ -15,39 +21,116 @@ getLoadout()
 
 function getLoadout() {
     // Primary
-    state.loadout.primary = getPrimary()
+    let primaries = flattenItems(store.sections[0].groups)
+    shuffleArray(primaries)
+    state.loadout.primary = primaries.pop()
 
     //Secondary
-    state.loadout.secondary = getSecondary()
+    let secondaries = flattenItems(store.sections[1].groups)
+    shuffleArray(secondaries)
+    state.loadout.secondary = secondaries.pop()
 
     // Throwable
-    state.loadout.throwable = getThrowable()
+    let throwables = flattenItems(store.sections[2].groups)
+    shuffleArray(throwables)
+    state.loadout.throwable = throwables.pop()
 
     // Stratagems
+    let stratagems = flattenItems(store.sections[3].groups)
+    shuffleArray(stratagems)
+
     state.loadout.stratagems = []
-    for (let i = 0; i < 5; i++) {
-        state.loadout.stratagems.push(getStratagem())
+    state.loadout.supports = 0
+    state.loadout.vehicles = 0
+    state.loadout.backpacks = 0
+
+    while (stratagems.length > 0) {
+
+        if (state.loadout.stratagems.length >= 5) {
+            break;
+        }
+
+        let stratagem = stratagems.pop()
+
+        // If already have backpack re-start loop
+        if (state.loadout.backpacks >= state.maxBackpacks && stratagem.backpack) {
+            continue;
+        }
+
+        // If already have vehicle re-start loop
+        if (state.loadout.vehicles >= state.maxVehicles && stratagem.vehicle) {
+            continue;
+        }
+
+        // If already have support weapon re-start loop
+        if (state.loadout.supports >= state.maxSupports && stratagem.support) {
+            continue;
+        }
+
+        if (stratagem.backpack) { state.loadout.backpacks++ }
+        if (stratagem.vehicle) { state.loadout.vehicles++ }
+        if (stratagem.support) { state.loadout.supports++ }
+
+        state.loadout.stratagems.push(stratagem)
+    }
+    // state.loadout.stratagems = []
+    // state.backpacks = 0
+    // state.supports = 0
+    // state.vehicles = 0
+    // for (let i = 0; i < 5; i++) {
+    //     let nextStratagem
+
+    //     while (true) {
+    //         nextStratagem = getStratagem()
+
+    //         // If already have backpack re-start loop
+    //         if (state.backpacks >= state.maxBackpacks && nextStratagem.backpack) {
+    //             continue;
+    //         }
+
+    //         // If already have vehicle re-start loop
+    //         if (state.vehicles >= state.maxVehicles && nextStratagem.vehicle) {
+    //             continue;
+    //         }
+
+    //         // If already have support weapon re-start loop
+    //         if (state.supports >= state.maxSupports && nextStratagem.support) {
+    //             continue;
+    //         }
+
+    //         // Prevent duplicates
+    //         if (!state.loadout.stratagems.includes(nextStratagem)) {
+    //             break;
+    //         }
+    //     }
+
+    //     if (nextStratagem.backpack) { state.backpacks++ }
+    //     if (nextStratagem.vehicle) { state.vehicles++ }
+    //     if (nextStratagem.support) { state.supports++ }
+    //     state.loadout.stratagems.push(nextStratagem)
+    // }
+}
+
+/* Randomize array in-place using Durstenfeld shuffle algorithm */
+function shuffleArray(array) {
+    for (var i = array.length - 1; i >= 0; i--) {
+        var j = Math.floor(Math.random() * (i + 1));
+        var temp = array[i];
+        array[i] = array[j];
+        array[j] = temp;
     }
 }
 
-function getPrimary() {
-    let temp = store.primaries[Math.floor(Math.random() * store.primaries.length)]
-    return temp.items[Math.floor(Math.random() * temp.items.length)]
-}
-
-function getSecondary() {
-    let temp = store.secondaries[Math.floor(Math.random() * store.secondaries.length)]
-    return temp.items[Math.floor(Math.random() * temp.items.length)]
-}
-
-function getThrowable() {
-    let temp = store.throwables[Math.floor(Math.random() * store.throwables.length)]
-    return temp.items[Math.floor(Math.random() * temp.items.length)]
-}
-
-function getStratagem() {
-    let temp = store.stratagems[Math.floor(Math.random() * store.stratagems.length)]
-    return temp.items[Math.floor(Math.random() * temp.items.length)]
+function flattenItems(array) {
+    let result = []
+    array.forEach(group => {
+        group.items.forEach(item => {
+            if (!item.locked) {
+                result.push(item)
+            }
+        })
+    });
+    return result
 }
 </script>
 
@@ -58,42 +141,35 @@ function getStratagem() {
             <li>
                 <div class="card-container">
                     <h3>Primary</h3>
-                    <Card :data="state.loadout.primary" />
+                    <Card :data="state.loadout.primary" :width="379" :height="203" />
                 </div>
             </li>
             <li>
                 <div class="card-container">
                     <h3>Secondary</h3>
-                    <Card :data="state.loadout.secondary" />
+                    <Card :data="state.loadout.secondary" :width="379" :height="203" />
                 </div>
             </li>
             <li>
                 <div class="card-container">
                     <h3>Throwable</h3>
-                    <Card :data="state.loadout.throwable" />
+                    <Card :data="state.loadout.throwable" :width="203" :height="203" />
                 </div>
             </li>
         </ul>
     </div>
 
-    <hr>
-
     <div class="stratagems">
         <h2>Stratagems</h2>
         <ul>
             <li v-for="stratagem in state.loadout.stratagems">
-                <Card :data="stratagem" />
+                <Card :data="stratagem" :width="128" :height="128" :isOutlined="true" />
             </li>
         </ul>
     </div>
 
-    <hr>
-
     <div class="controls">
-        <input type="checkbox">Single Backpack</input>
-        <input type="checkbox">Single Vehicle</input>
-        <br>
-        <button @click="getLoadout">Get Assigned Loadout</button>
+        <Button @click="getLoadout" label="Get Assigned Loadout" />
     </div>
 </template>
 

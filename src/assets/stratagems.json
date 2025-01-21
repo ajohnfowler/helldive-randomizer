@@ -4,55 +4,73 @@
         "items": [
             {
                 "name": "Machine Gun",
-                "image": ""
+                "image": "https://helldivers.wiki.gg/images/e/e0/Machine_Gun_Stratagem_Icon.png",
+                "support": true
             },
             {
                 "name": "Anti-Materiel Rifle",
-                "image": "Anti-Materiel_Rifle"
+                "image": "https://helldivers.wiki.gg/images/3/3c/Anti-Materiel_Rifle_Stratagem_Icon.png",
+                "support": true
             },
             {
                 "name": "Stalwart",
-                "image": ""
+                "image": "https://helldivers.wiki.gg/images/4/46/Stalwart_Stratagem_Icon.png",
+                "support": true
             },
             {
                 "name": "Expendable Anti-Tank",
-                "image": ""
+                "image": "https://helldivers.wiki.gg/images/1/1c/Expendable_Anti-Tank_Stratagem_Icon.png",
+                "support": true
             },
             {
                 "name": "Recoilless Rifle",
-                "image": ""
+                "image": "https://helldivers.wiki.gg/images/7/70/Recoilless_Rifle_Stratagem_Icon.png",
+                "support": true,
+                "backpack": true
             },
             {
                 "name": "Flamethrower",
-                "image": ""
+                "image": "https://helldivers.wiki.gg/images/7/75/Flamethrower_Stratagem_Icon.png",
+                "support": true
             },
             {
                 "name": "Autocannon",
-                "image": ""
+                "image": "https://helldivers.wiki.gg/images/e/ef/Autocannon_Stratagem_Icon.png",
+                "support": true,
+                "backpack": true
             },
             {
                 "name": "Heavy Machine Gun",
-                "image": ""
+                "image": "https://helldivers.wiki.gg/images/d/d9/Heavy_Machine_Gun_Stratagem_Icon.png",
+                "support": true
             },
             {
                 "name": "Airburst Rocket Launcher",
-                "image": ""
+                "image": "https://helldivers.wiki.gg/images/a/ad/RL-77_Airburst_Rocket_Launcher_Stratagem_Icon.png",
+                "support": true,
+                "backpack": true
             },
             {
                 "name": "Commando",
-                "image": ""
+                "image": "https://helldivers.wiki.gg/images/7/78/Commando_Stratagem_Icon.png",
+                "support": true
             },
             {
                 "name": "Railgun",
-                "image": ""
+                "image": "https://helldivers.wiki.gg/images/3/35/Railgun_Stratagem_Icon.png",
+                "support": true
             },
             {
                 "name": "Spear",
-                "image": ""
+                "image": "https://helldivers.wiki.gg/images/5/54/Spear_Stratagem_Icon.png",
+                "support": true,
+                "backpack": true
             },
             {
                 "name": "StA-X3 W.A.S.P. Launcher",
-                "image": ""
+                "image": "https://helldivers.wiki.gg/images/a/af/StA-X3_W.A.S.P._Launcher_Stratagem_Icon.png",
+                "support": true,
+                "backpack": true
             }
         ]
     },
@@ -61,35 +79,35 @@
         "items": [
             {
                 "name": "Orbital Gatling Barrage",
-                "image": ""
+                "image": "https://helldivers.wiki.gg/images/f/f6/Orbital_Gatling_Barrage_Stratagem_Icon.png"
             },
             {
                 "name": "Oribital Airburst Strike",
-                "image": ""
+                "image": "https://helldivers.wiki.gg/images/2/28/Orbital_Airburst_Strike_Stratagem_Icon.png"
             },
             {
                 "name": "Orbital 120MM HE Barrage",
-                "image": ""
+                "image": "https://helldivers.wiki.gg/images/4/40/Orbital_120mm_HE_Barrage_Stratagem_Icon.png"
             },
             {
                 "name": "Orbital 380MM HE Barrage",
-                "image": ""
+                "image": "https://helldivers.wiki.gg/images/1/12/Orbital_380mm_HE_Barrage_Stratagem_Icon.png"
             },
             {
                 "name": "Orbital Walking Barrage",
-                "image": ""
+                "image": "https://helldivers.wiki.gg/images/5/53/Orbital_Walking_Barrage_Stratagem_Icon.png"
             },
             {
                 "name": "Orbital Laser",
-                "image": ""
+                "image": "https://helldivers.wiki.gg/images/d/d8/Orbital_Laser_Stratagem_Icon.png"
             },
             {
                 "name": "Orbital Napalm Barrage",
-                "image": ""
+                "image": "https://helldivers.wiki.gg/images/9/97/Orbital_Napalm_Barrage_Stratagem_Icon.png"
             },
             {
                 "name": "Oribital Railcannon Strike",
-                "image": ""
+                "image": "https://helldivers.wiki.gg/images/6/6f/Orbital_Railcannon_Strike_Stratagem_Icon.png"
             }
         ]
     },
@@ -98,35 +116,41 @@
         "items": [
             {
                 "name": "Eagle Strafing Run",
-                "image": ""
+                "image": "https://helldivers.wiki.gg/images/f/f3/Eagle_Strafing_Run_Stratagem_Icon.png"
             },
             {
                 "name": "Eagle Airstrike",
-                "image": ""
+                "image": "https://helldivers.wiki.gg/images/7/72/Eagle_Airstrike_Stratagem_Icon.png"
             },
             {
                 "name": "Eagle Cluster Bomb",
-                "image": ""
+                "image": "https://helldivers.wiki.gg/images/4/4f/Eagle_Cluster_Bomb_Stratagem_Icon.png"
             },
             {
                 "name": "Eagle Napalm Airstrike",
-                "image": ""
+                "image": "https://helldivers.wiki.gg/images/4/42/Eagle_Napalm_Airstrike_Stratagem_Icon.png"
+            },
+            {
+                "name": "LIFT-850 Jump Pack",
+                "image": "https://helldivers.wiki.gg/images/f/f5/Jump_Pack_Stratagem_Icon.png",
+                "backpack": true
             },
             {
                 "name": "Eagle Smoke Strike",
-                "image": ""
+                "image": "https://helldivers.wiki.gg/images/0/05/Eagle_Smoke_Strike_Stratagem_Icon.png"
             },
             {
                 "name": "Eagle 110MM Rocket Pods",
-                "image": ""
+                "image": "https://helldivers.wiki.gg/images/e/ef/Eagle_110mm_Rocket_Pods_Stratagem_Icon.png"
             },
             {
                 "name": "Eagle 500KG Bomb",
-                "image": ""
+                "image": "https://helldivers.wiki.gg/images/e/e5/Eagle_500kg_Bomb_Stratagem_Icon.png"
             },
             {
-                "name": "Fast Recon Vehicle",
-                "image": ""
+                "name": "M-102 Fast Recon Vehicle",
+                "image": "https://helldivers.wiki.gg/images/0/00/M-102_Fast_Recon_Vehicle_Stratagem_Icon.png",
+                "vehicle": true
             }
         ]
     },
@@ -135,31 +159,32 @@
         "items": [
             {
                 "name": "Orbital Precision Strike",
-                "image": ""
+                "image": "https://helldivers.wiki.gg/images/2/2a/Orbital_Precision_Strike_Stratagem_Icon.png"
             },
             {
                 "name": "Orbital Gas Strike",
-                "image": ""
+                "image": "https://helldivers.wiki.gg/images/c/cd/Orbital_Gas_Strike_Stratagem_Icon.png"
             },
             {
                 "name": "Orbital EMS Strike",
-                "image": ""
+                "image": "https://helldivers.wiki.gg/images/1/16/Orbital_EMS_Strike_Stratagem_Icon.png"
             },
             {
                 "name": "Orbital Smoke Strike",
-                "image": ""
+                "image": "https://helldivers.wiki.gg/images/b/bc/Orbital_Smoke_Strike_Stratagem_Icon.png"
             },
             {
                 "name": "HMG Emplacement",
-                "image": ""
+                "image": "https://helldivers.wiki.gg/images/0/03/HMG_Emplacement_Stratagem_Icon.png"
             },
             {
                 "name": "Shield Generator Relay",
-                "image": ""
+                "image": "https://helldivers.wiki.gg/images/e/e4/Shield_Generator_Relay_Stratagem_Icon.png",
+                "backpack": true
             },
             {
                 "name": "Tesla Tower",
-                "image": ""
+                "image": "https://helldivers.wiki.gg/images/8/8f/Tesla_Tower_Stratagem_Icon.png"
             }
         ]
     },
@@ -168,47 +193,59 @@
         "items": [
             {
                 "name": "Anti-Personal Minefield",
-                "image": ""
+                "image": "https://helldivers.wiki.gg/images/b/bb/Anti-Personnel_Minefield_Stratagem_Icon.png"
             },
             {
                 "name": "Supply Pack",
-                "image": ""
+                "image": "https://helldivers.wiki.gg/images/6/61/Supply_Pack_Stratagem_Icon.png",
+                "backpack": true
             },
             {
                 "name": "Granade Launcher",
-                "image": ""
+                "image": "https://helldivers.wiki.gg/images/c/cf/Grenade_Launcher_Stratagem_Icon.png",
+                "support": true
             },
             {
                 "name": "Laser Cannon",
-                "image": ""
+                "image": "https://helldivers.wiki.gg/images/c/c3/Laser_Cannon_Stratagem_Icon.png",
+                "support": true
             },
             {
                 "name": "Incendiary Mines",
-                "image": ""
+                "image": "https://helldivers.wiki.gg/images/a/a9/Incendiary_Minefield_Stratagem_Icon.png"
             },
             {
                 "name": "\"Guard Dog\" Rover",
-                "image": ""
+                "image": "https://helldivers.wiki.gg/images/6/6f/Guard_Dog_Rover_Stratagem_Icon.png",
+                "backpack": true
             },
             {
                 "name": "Ballistic Shield Backpack",
-                "image": ""
+                "image": "https://helldivers.wiki.gg/images/3/37/Ballistic_Shield_Backpack_Stratagem_Icon.png",
+                "backpack": true
             },
             {
                 "name": "Arc Thrower",
-                "image": ""
+                "image": "https://helldivers.wiki.gg/images/1/10/Arc_Thrower_Stratagem_Icon.png",
+                "support": true
             },
             {
                 "name": "Anti-Tank Mines",
-                "image": ""
+                "image": "https://helldivers.wiki.gg/images/b/ba/MD-17_Anti-Tank_Mines_Stratagem_Icon.png"
             },
             {
                 "name": "Quasar Cannon",
-                "image": ""
+                "image": "https://helldivers.wiki.gg/images/8/87/Quasar_Cannon_Stratagem_Icon.png",
+                "support": true
             },
             {
                 "name": "Shield Generator Pack",
-                "image": ""
+                "image": "https://helldivers.wiki.gg/images/9/99/Shield_Generator_Pack_Stratagem_Icon.png",
+                "backpack": true
+            },
+            {
+                "name": "MD-8 Gas Mines",
+                "image": "https://helldivers.wiki.gg/images/c/c0/Gas_Minefield_Stratagem_Icon.png.png"
             }
         ]
     },
@@ -217,39 +254,42 @@
         "items": [
             {
                 "name": "Machine Gun Sentry",
-                "image": ""
+                "image": "https://helldivers.wiki.gg/images/5/5a/Machine_Gun_Sentry_Stratagem_Icon.png"
             },
             {
                 "name": "Gatling Sentry",
-                "image": ""
+                "image": "https://helldivers.wiki.gg/images/2/28/Gatling_Sentry_Stratagem_Icon.png"
             },
             {
                 "name": "Mortar Sentry",
-                "image": ""
+                "image": "https://helldivers.wiki.gg/images/a/ad/Mortar_Sentry_Stratagem_Icon.png"
             },
             {
                 "name": "\"Guard Dog\"",
-                "image": ""
+                "image": "https://helldivers.wiki.gg/images/7/73/Guard_Dog_Stratagem_Icon.png",
+                "backpack": true
             },
             {
                 "name": "Autocannon Sentry",
-                "image": ""
+                "image": "https://helldivers.wiki.gg/images/a/a7/Autocannon_Sentry_Stratagem_Icon.png"
             },
             {
                 "name": "Rocket Sentry",
-                "image": ""
+                "image": "https://helldivers.wiki.gg/images/6/62/Rocket_Sentry_Stratagem_Icon.png"
             },
             {
                 "name": "EMS Mortar Sentry",
-                "image": ""
+                "image": "https://helldivers.wiki.gg/images/a/a8/AM-23_EMS_Mortar_Sentry_Stratagem_Icon.png"
             },
             {
                 "name": "Partiot Exosuit",
-                "image": ""
+                "image": "https://helldivers.wiki.gg/images/3/30/EXO-45_Patriot_Exosuit_Stratagem_Icon.png",
+                "vehicle": true
             },
             {
                 "name": "Emancipator Exosuit",
-                "image": ""
+                "image": "https://helldivers.wiki.gg/images/8/82/EXO-49_Emancipator_Exosuit_Stratagem_Icon.png",
+                "vehicle": true
             }
         ]
     },
@@ -258,11 +298,13 @@
         "items": [
             {
                 "name": "Sterilizer",
-                "image": ""
+                "image": "https://helldivers.wiki.gg/images/2/29/Sterilizer_Stratagem_Icon.png",
+                "support": true
             },
             {
                 "name": "\"Guard Dog\" Dog Breath",
-                "image": ""
+                "image": "https://helldivers.wiki.gg/images/2/20/Guard_Dog_Dog_Breath_Stratagem_Icon.png",
+                "backpack": true
             }
         ]
     },
@@ -271,15 +313,16 @@
         "items": [
             {
                 "name": "Directional Shield",
-                "image": ""
-            },
-            {
-                "name": "Flame Sentry",
-                "image": ""
+                "image": "https://helldivers.wiki.gg/images/b/b7/SH-51_Directional_Shield_Stratagem_Icon.png",
+                "backpack": true
             },
             {
                 "name": "Anti-Tank Emplacement",
-                "image": ""
+                "image": "https://helldivers.wiki.gg/images/6/62/E_AT-12_Anti-Tank_Emplacement_Stratagem_Icon.png"
+            },
+            {
+                "name": "Flame Sentry",
+                "image": "https://helldivers.wiki.gg/images/0/0e/A_FLAM-40_Flame_Sentry_Stratagem_Icon.png"
             }
         ]
     }

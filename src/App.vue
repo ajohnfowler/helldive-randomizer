@@ -1,4 +1,6 @@
 <script setup>
+import Button from 'primevue/button';
+
 import { useStore } from '@/stores/store';
 
 import Loadout from '@/components/Loadout.vue';
@@ -15,7 +17,7 @@ function expandSidebar(event) {
 <template>
   <header>
     <h1>Helldive Randomizer</h1>
-    <button class="sb-button" @click="expandSidebar">Unlocked Equipment</button>
+    <Button label="Unlocked Equipment" class="sb-button" @click="expandSidebar" />
   </header>
 
   <aside>
