@@ -15,9 +15,10 @@ const store = useStore();
             <AccordionHeader>{{ section.name }}</AccordionHeader>
             <AccordionContent>
                 <ul v-for="group in section.groups">
-                    <h3 :class="{ locked: group.locked }" @click="store.toggleGroup(group)">{{ group.name }}</h3>
+                    <h3 :class="{ locked: group.items.every((x) => x.locked == true) }"
+                        @click="store.toggleGroup(group)">{{ group.name }}</h3>
                     <li v-for="item in group.items" :class="{ locked: item.locked }"
-                        @click="store.toggleItem(group, item)">
+                        @click="item.locked = !item.locked">
                         {{ item.name }}
                     </li>
                 </ul>

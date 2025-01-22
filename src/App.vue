@@ -7,7 +7,7 @@ import Loadout from '@/components/Loadout.vue';
 import Selection from './components/Selection.vue';
 
 const store = useStore()
-store.loadData()
+store.init()
 
 function expandSidebar(event) {
   document.body.classList.toggle('sb-expanded')

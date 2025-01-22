@@ -1,4 +1,3 @@
-import { ref, computed } from "vue";
 import { defineStore } from "pinia";
 
 import primaries_data from "@/assets/primaries.json";
@@ -8,7 +7,6 @@ import stratagems_data from "@/assets/stratagems.json";
 
 export type Section = {
   name: string;
-  locked: boolean;
   groups: Group[];
 };
 
@@ -32,30 +30,8 @@ export const useStore = defineStore("store", {
   }),
 
   actions: {
-    loadData() {
-      this.sections.push({
-        name: "primaries",
-        locked: false,
-        groups: primaries_data,
-      });
-
-      this.sections.push({
-        name: "secondaries",
-        locked: false,
-        groups: secondaries_data,
-      });
-
-      this.sections.push({
-        name: "throwables",
-        locked: false,
-        groups: throwables_data,
-      });
-
-      this.sections.push({
-        name: "stratagems",
-        locked: false,
-        groups: stratagems_data,
-      });
+    init() {
+      this.loadFileData();
     },
 
     toggleGroup(group) {
@@ -66,16 +42,40 @@ export const useStore = defineStore("store", {
       });
     },
 
-    toggleItem(group, item) {
-      item.locked = !item.locked;
-
-      group.locked = true;
-      group.items.forEach((x) => {
-        if (!x.locked) {
-          group.locked = false;
-          console.log(x.locked);
+    loadLocalData() {
+      if (localStorage.getItem("helldive-data")) {
+        try {
+          this.sections = JSON.parse(localStorage.getItem("helldive-data"));
+        } catch (e) {
+          localStorage.removeItem("helldive-data");
         }
+      }
+    },
+
+    loadFileData() {
+      this.sections.push({
+        name: "primaries",
+        groups: primaries_data,
+      });
+
+      this.sections.push({
+        name: "secondaries",
+        groups: secondaries_data,
+      });
+
+      this.sections.push({
+        name: "throwables",
+        groups: throwables_data,
+      });
+
+      this.sections.push({
+        name: "stratagems",
+        groups: stratagems_data,
       });
     },
+
+    loadGroupData() {},
+
+    saveLocalData() {},
   },
 });

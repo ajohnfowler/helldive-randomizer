@@ -46,7 +46,7 @@ function getLoadout() {
 
     while (stratagems.length > 0) {
 
-        if (state.loadout.stratagems.length >= 5) {
+        if (state.loadout.stratagems.length >= 4) {
             break;
         }
 
@@ -73,42 +73,6 @@ function getLoadout() {
 
         state.loadout.stratagems.push(stratagem)
     }
-    // state.loadout.stratagems = []
-    // state.backpacks = 0
-    // state.supports = 0
-    // state.vehicles = 0
-    // for (let i = 0; i < 5; i++) {
-    //     let nextStratagem
-
-    //     while (true) {
-    //         nextStratagem = getStratagem()
-
-    //         // If already have backpack re-start loop
-    //         if (state.backpacks >= state.maxBackpacks && nextStratagem.backpack) {
-    //             continue;
-    //         }
-
-    //         // If already have vehicle re-start loop
-    //         if (state.vehicles >= state.maxVehicles && nextStratagem.vehicle) {
-    //             continue;
-    //         }
-
-    //         // If already have support weapon re-start loop
-    //         if (state.supports >= state.maxSupports && nextStratagem.support) {
-    //             continue;
-    //         }
-
-    //         // Prevent duplicates
-    //         if (!state.loadout.stratagems.includes(nextStratagem)) {
-    //             break;
-    //         }
-    //     }
-
-    //     if (nextStratagem.backpack) { state.backpacks++ }
-    //     if (nextStratagem.vehicle) { state.vehicles++ }
-    //     if (nextStratagem.support) { state.supports++ }
-    //     state.loadout.stratagems.push(nextStratagem)
-    // }
 }
 
 /* Randomize array in-place using Durstenfeld shuffle algorithm */
