@@ -12,7 +12,6 @@ export type Section = {
 
 export type Group = {
   name: string;
-  locked: boolean;
   items: Item[];
 };
 
@@ -32,24 +31,23 @@ export const useStore = defineStore("store", {
   actions: {
     init() {
       this.loadFileData();
+      this.loadLocalData();
     },
 
     toggleGroup(group) {
-      group.locked = !group.locked;
+      let locked = !group.items.every((x) => x.locked);
 
       group.items.forEach((item) => {
-        item.locked = group.locked;
+        item.locked = locked;
       });
+
+      this.saveLocalData();
     },
 
-    loadLocalData() {
-      if (localStorage.getItem("helldive-data")) {
-        try {
-          this.sections = JSON.parse(localStorage.getItem("helldive-data"));
-        } catch (e) {
-          localStorage.removeItem("helldive-data");
-        }
-      }
+    toggleItem(item) {
+      item.locked = !item.locked;
+
+      this.saveLocalData();
     },
 
     loadFileData() {
@@ -74,8 +72,43 @@ export const useStore = defineStore("store", {
       });
     },
 
-    loadGroupData() {},
+    loadLocalData() {
+      let data = [];
 
-    saveLocalData() {},
+      if (localStorage.getItem("helldive-data")) {
+        try {
+          data = JSON.parse(localStorage.getItem("helldive-data"));
+        } catch (e) {
+          localStorage.removeItem("helldive-data");
+        }
+      }
+
+      this.sections.forEach((section) => {
+        section.groups.forEach((group) => {
+          group.items.forEach((item) => {
+            console.log(data.includes(item.name));
+            item.locked = data.includes(item.name);
+          });
+        });
+      });
+
+      console.log(data);
+    },
+
+    saveLocalData() {
+      let data = [];
+
+      this.sections.forEach((section) => {
+        section.groups.forEach((group) => {
+          group.items.forEach((item) => {
+            if (item.locked) {
+              data.push(item.name);
+            }
+          });
+        });
+      });
+
+      localStorage.setItem("helldive-data", JSON.stringify(data));
+    },
   },
 });
