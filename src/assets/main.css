@@ -1,4 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@200..800&display=swap');
+@font-face {
+  font-family: "Gemunu Libre";
+  src: url(font/GemunuLibre-SemiBold.ttf);
+}
 
 body {
   --sb-width: 0;
@@ -21,36 +24,37 @@ body.sb-expanded {
   --sb-width: 25rem;
 }
 
-header {
-  position: fixed;
-  inset: 0 0 auto 0;
-  height: 80px;
-  text-align: center;
-  border-bottom: 3px solid gray;
-}
-
 main {
-  position: fixed;
-  inset: 80px 0 80px auto;
+  inset: 80px 0 0 auto;
   margin-left: var(--sb-width);
   transition: margin-left 0.2s ease-in-out;
 }
 
 aside {
   position: fixed;
-  inset: 80px auto 80px 0;
+  inset: 50px auto 60px 0;
   width: var(--sb-width);
   transition: width 0.2s ease-in-out;
   /* move the sidebar above main content */
   z-index: 100;
 }
 
+header {
+  position: fixed;
+  inset: 0 0 auto 0;
+  height: 50px;
+  text-align: center;
+  border-bottom: 3px solid gray;
+  background-color: rgb(30, 30, 30);
+}
+
 footer {
   position: fixed;
   inset: auto 0 0 0;
-  height: 80px;
+  height: 60px;
   text-align: center;
   border-top: 3px solid gray;
+  background-color: rgb(30, 30, 30);
 }
 
 .sb-content {

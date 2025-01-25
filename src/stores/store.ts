@@ -4,6 +4,7 @@ import primaries_data from "@/assets/primaries.json";
 import secondaries_data from "@/assets/secondaries.json";
 import throwables_data from "@/assets/throwables.json";
 import stratagems_data from "@/assets/stratagems.json";
+import booster_data from "@/assets/boosters.json";
 
 export type Section = {
   name: string;
@@ -70,6 +71,11 @@ export const useStore = defineStore("store", {
         name: "stratagems",
         groups: stratagems_data,
       });
+
+      // this.sections.push({
+      //   name: "boosters",
+      //   items: booster_data,
+      // });
     },
 
     loadLocalData() {
@@ -86,13 +92,10 @@ export const useStore = defineStore("store", {
       this.sections.forEach((section) => {
         section.groups.forEach((group) => {
           group.items.forEach((item) => {
-            console.log(data.includes(item.name));
             item.locked = data.includes(item.name);
           });
         });
       });
-
-      console.log(data);
     },
 
     saveLocalData() {

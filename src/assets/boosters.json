@@ -1,0 +1,35 @@
+[
+    {
+        "name": "Assult Rifle",
+        "items": [
+            {
+                "name": "AR-23 Liberator",
+                "image": "https://helldivers.wiki.gg/images/f/f2/AR-23_Liberator_Weapon_Icon.png"
+            },
+            {
+                "name": "AR-23P Liberator Penetrator",
+                "image": "https://helldivers.wiki.gg/images/f/fa/AR-23P_Liberator_Penetrator_Weapon_Icon.png"
+            },
+            {
+                "name": "AR-23C Liberator Concussive",
+                "image": "https://helldivers.wiki.gg/images/c/ce/AR-23C_Liberator_Concussive_Weapon_Icon.png"
+            },
+            {
+                "name": "StA-52 Assault Rifle",
+                "image": "https://helldivers.wiki.gg/images/8/80/StA-52_Assault_Rifle_Primary_Weaponry.png"
+            },
+            {
+                "name": "AR-23A Liberator Carbine",
+                "image": "https://helldivers.wiki.gg/images/7/7e/AR-23A_Liberator_Carbine_Weapon_Icon.png"
+            },
+            {
+                "name": "AR-61 Tenderizer",
+                "image": "https://helldivers.wiki.gg/images/0/0c/AR-61_Tenderizer_Weapon_Icon.png"
+            },
+            {
+                "name": "BR-14 Adjudicator",
+                "image": "https://helldivers.wiki.gg/images/8/8b/BR-14_Adjudicator_Weapon_Icon.png"
+            }
+        ]
+    }
+]

@@ -25,6 +25,7 @@ function expandSidebar(event) {
       <Selection />
     </div>
   </aside>
+
   <main>
     <Loadout />
   </main>
@@ -41,8 +42,8 @@ function expandSidebar(event) {
 <style scoped>
 .sb-button {
   position: fixed;
-  top: 20px;
-  left: 20px;
+  top: 5px;
+  left: 5px;
   height: 40px;
 }
 </style>

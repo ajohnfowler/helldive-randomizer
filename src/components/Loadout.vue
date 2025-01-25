@@ -39,6 +39,11 @@ function getLoadout() {
     let stratagems = flattenItems(store.sections[3].groups)
     shuffleArray(stratagems)
 
+    // Booster
+    // let boosters = flattenItems(store.sections[4])
+    // shuffleArray(boosters)
+    // state.loadout.booster = boosters.pop()
+
     state.loadout.stratagems = []
     state.loadout.supports = 0
     state.loadout.vehicles = 0
@@ -99,53 +104,43 @@ function flattenItems(array) {
 </script>
 
 <template>
-    <div class="equipment">
-        <h2>Equipment</h2>
-        <ul>
-            <li>
-                <div class="card-container">
-                    <h3>Primary</h3>
-                    <Card :data="state.loadout.primary" :width="379" :height="203" />
-                </div>
-            </li>
-            <li>
-                <div class="card-container">
-                    <h3>Secondary</h3>
-                    <Card :data="state.loadout.secondary" :width="379" :height="203" />
-                </div>
-            </li>
-            <li>
-                <div class="card-container">
-                    <h3>Throwable</h3>
-                    <Card :data="state.loadout.throwable" :width="203" :height="203" />
-                </div>
-            </li>
-        </ul>
-    </div>
-
-    <div class="stratagems">
-        <h2>Stratagems</h2>
-        <ul>
-            <li v-for="stratagem in state.loadout.stratagems">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm">
+                <h4>Primary</h4>
+                <Card :data="state.loadout.primary" :width="379" :height="203" />
+            </div>
+            <div class="col-sm">
+                <h4>Secondary</h4>
+                <Card :data="state.loadout.secondary" :width="379" :height="203" />
+            </div>
+            <div class="col-sm">
+                <h4>Throwable</h4>
+                <Card :data="state.loadout.throwable" :width="203" :height="203" />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm" v-for="(stratagem, index) in state.loadout.stratagems">
+                <h4>Stratagem {{ index + 1 }}</h4>
                 <Card :data="stratagem" :width="128" :height="128" :isOutlined="true" />
-            </li>
-        </ul>
-    </div>
-
-    <div class="controls">
-        <Button @click="getLoadout" label="Get Assigned Loadout" />
+            </div>
+            <!-- <div class="col-sm">
+                <h4>Booster</h4>
+                <Card :data="state.loadout.booster" :width="128" :height="128" :isOutlined="true" />
+            </div> -->
+        </div>
+        <div class="row">
+            <div class="controls">
+                <Button @click="getLoadout" label="Get Assigned Loadout" />
+            </div>
+        </div>
     </div>
 </template>
 
 <style scoped>
-ul {
-    display: table;
+.container {
     width: 100%;
-    padding: 0;
-    table-layout: fixed;
-}
-
-li {
-    display: table-cell;
+    margin-top: 100px;
+    margin-bottom: 100px;
 }
 </style>
