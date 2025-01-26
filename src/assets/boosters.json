@@ -1,34 +1,62 @@
 [
     {
-        "name": "Assult Rifle",
+        "name": "Boosters",
         "items": [
             {
-                "name": "AR-23 Liberator",
-                "image": "https://helldivers.wiki.gg/images/f/f2/AR-23_Liberator_Weapon_Icon.png"
+                "name": "Hellpod Space Optimization",
+                "image": "https://helldivers.wiki.gg/images/2/2a/Hellpod_Space_Optimization_Booster_Icon.svg"
             },
             {
-                "name": "AR-23P Liberator Penetrator",
-                "image": "https://helldivers.wiki.gg/images/f/fa/AR-23P_Liberator_Penetrator_Weapon_Icon.png"
+                "name": "Vitality Enhancement",
+                "image": "https://helldivers.wiki.gg/images/f/f6/Vitality_Enhancement_Booster_Icon.svg"
             },
             {
-                "name": "AR-23C Liberator Concussive",
-                "image": "https://helldivers.wiki.gg/images/c/ce/AR-23C_Liberator_Concussive_Weapon_Icon.png"
+                "name": "UAV Recon Booster",
+                "image": "https://helldivers.wiki.gg/images/e/e7/UAV_Recon_Booster_Booster_Icon.svg"
             },
             {
-                "name": "StA-52 Assault Rifle",
-                "image": "https://helldivers.wiki.gg/images/8/80/StA-52_Assault_Rifle_Primary_Weaponry.png"
+                "name": "Stamina Enhancement",
+                "image": "https://helldivers.wiki.gg/images/6/68/Stamina_Enhancement_Booster_Icon.svg"
             },
             {
-                "name": "AR-23A Liberator Carbine",
-                "image": "https://helldivers.wiki.gg/images/7/7e/AR-23A_Liberator_Carbine_Weapon_Icon.png"
+                "name": "Muscle Enhancement",
+                "image": "https://helldivers.wiki.gg/images/8/8b/Muscle_Enhancement_Booster_Icon.svg"
             },
             {
-                "name": "AR-61 Tenderizer",
-                "image": "https://helldivers.wiki.gg/images/0/0c/AR-61_Tenderizer_Weapon_Icon.png"
+                "name": "Increased Reinforcement Budget",
+                "image": "https://helldivers.wiki.gg/images/6/6d/Increased_Reinforcement_Budget_Booster_Icon.svg"
             },
             {
-                "name": "BR-14 Adjudicator",
-                "image": "https://helldivers.wiki.gg/images/8/8b/BR-14_Adjudicator_Weapon_Icon.png"
+                "name": "Flexible Reinforcement Budget",
+                "image": "https://helldivers.wiki.gg/images/4/49/Flexible_Reinforcement_Budget_Booster_Icon.svg"
+            },
+            {
+                "name": "Localization Confusion Booster",
+                "image": "https://helldivers.wiki.gg/images/9/9f/Localization_Confusion_Booster_Icon.svg"
+            },
+            {
+                "name": "Expert Extraction Pilot Booster",
+                "image": "https://helldivers.wiki.gg/images/a/af/Expert_Extraction_Pilot_Booster_Icon.svg"
+            },
+            {
+                "name": "Motivational Shocks",
+                "image": "https://helldivers.wiki.gg/images/6/64/Motivational_Shocks_Booster_Icon.svg"
+            },
+            {
+                "name": "Experimental Infusion",
+                "image": "https://helldivers.wiki.gg/images/6/64/Motivational_Shocks_Booster_Icon.svg"
+            },
+            {
+                "name": "Firebomb Hellpods",
+                "image": "https://helldivers.wiki.gg/images/9/9c/Firebomb_Hellpods_Booster_Icon.svg"
+            },
+            {
+                "name": "Dead Sprint",
+                "image": "https://helldivers.wiki.gg/images/4/4a/Dead_Sprint_Booster_Icon.svg"
+            },
+            {
+                "name": "Armed Resupply Pods",
+                "image": "https://helldivers.wiki.gg/images/3/3a/Armed_Resupply_Pods_Booster_Icon.svg"
             }
         ]
     }

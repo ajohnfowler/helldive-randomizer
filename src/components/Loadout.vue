@@ -40,9 +40,9 @@ function getLoadout() {
     shuffleArray(stratagems)
 
     // Booster
-    // let boosters = flattenItems(store.sections[4])
-    // shuffleArray(boosters)
-    // state.loadout.booster = boosters.pop()
+    let boosters = flattenItems(store.sections[4].groups)
+    shuffleArray(boosters)
+    state.loadout.booster = boosters.pop()
 
     state.loadout.stratagems = []
     state.loadout.supports = 0
@@ -124,10 +124,10 @@ function flattenItems(array) {
                 <h4>Stratagem {{ index + 1 }}</h4>
                 <Card :data="stratagem" :width="128" :height="128" :isOutlined="true" />
             </div>
-            <!-- <div class="col-sm">
+            <div class="col-sm">
                 <h4>Booster</h4>
                 <Card :data="state.loadout.booster" :width="128" :height="128" :isOutlined="true" />
-            </div> -->
+            </div>
         </div>
         <div class="row">
             <div class="controls">

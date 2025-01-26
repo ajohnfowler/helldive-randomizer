@@ -18,11 +18,7 @@ p {
     height: 2lh;
 }
 
-img {
-    border-radius: 2px;
-}
-
 img.outlined {
-    border: 3px gray solid;
+    filter: drop-shadow(3px 0 0 gray) drop-shadow(0 3px 0 gray) drop-shadow(-3px 0 0 gray) drop-shadow(0 -3px 0 gray);
 }
 </style>
