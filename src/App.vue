@@ -4,7 +4,9 @@ import Button from 'primevue/button';
 import { useStore } from '@/stores/store';
 
 import Loadout from '@/components/Loadout.vue';
-import Selection from './components/Selection.vue';
+import Selection from './components/UnlockedDrawer.vue';
+import SettingDialog from './components/SettingDialog.vue';
+import UnlockedDrawer from './components/UnlockedDrawer.vue';
 
 const store = useStore()
 store.init()
@@ -17,17 +19,19 @@ function expandSidebar() {
 <template>
   <header>
     <h1>Helldive Randomizer</h1>
-    <Button label="Unlocked Equipment" class="sb-button" @click="expandSidebar" />
+    <!-- <Button label="Unlocked Equipment" class="sb-button" @click="expandSidebar" /> -->
   </header>
 
-  <aside>
+  <!-- <aside>
     <div class="sb-content">
       <Selection />
     </div>
-  </aside>
+  </aside> -->
 
   <main>
     <Loadout />
+    <SettingDialog />
+    <UnlockedDrawer />
   </main>
 
   <footer>
@@ -39,11 +43,11 @@ function expandSidebar() {
   </footer>
 </template>
 
-<style scoped>
+<!-- <style scoped>
 .sb-button {
   position: fixed;
   top: 5px;
   left: 5px;
   height: 40px;
 }
-</style>
+</style> -->

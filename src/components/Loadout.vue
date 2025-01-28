@@ -1,21 +1,15 @@
 <script setup>
 import Button from 'primevue/button';
+import InputGroup from 'primevue/inputgroup';
 
 import { useStore } from '@/stores/store';
 import Card from './Card.vue';
 import { reactive } from 'vue';
+import { ref } from "vue";
+
+const settings = ref(false);
 
 const store = useStore()
-
-const state = reactive(
-    {
-        loadout: {},
-
-        maxSupports: 1,
-        maxBackpacks: 1,
-        maxVehicles: 1
-    }
-)
 
 getLoadout()
 
@@ -23,17 +17,17 @@ function getLoadout() {
     // Primary
     let primaries = flattenItems(store.sections[0].groups)
     shuffleArray(primaries)
-    state.loadout.primary = primaries.pop()
+    store.loadout.primary = primaries.pop()
 
     //Secondary
     let secondaries = flattenItems(store.sections[1].groups)
     shuffleArray(secondaries)
-    state.loadout.secondary = secondaries.pop()
+    store.loadout.secondary = secondaries.pop()
 
     // Throwable
     let throwables = flattenItems(store.sections[2].groups)
     shuffleArray(throwables)
-    state.loadout.throwable = throwables.pop()
+    store.loadout.throwable = throwables.pop()
 
     // Stratagems
     let stratagems = flattenItems(store.sections[3].groups)
@@ -42,41 +36,41 @@ function getLoadout() {
     // Booster
     let boosters = flattenItems(store.sections[4].groups)
     shuffleArray(boosters)
-    state.loadout.booster = boosters.pop()
+    store.loadout.booster = boosters.pop()
 
-    state.loadout.stratagems = []
-    state.loadout.supports = 0
-    state.loadout.vehicles = 0
-    state.loadout.backpacks = 0
+    store.loadout.stratagems = []
+    store.loadout.supports = 0
+    store.loadout.vehicles = 0
+    store.loadout.backpacks = 0
 
     while (stratagems.length > 0) {
 
-        if (state.loadout.stratagems.length >= 4) {
+        if (store.loadout.stratagems.length >= 4) {
             break;
         }
 
         let stratagem = stratagems.pop()
 
         // If already have backpack re-start loop
-        if (state.loadout.backpacks >= state.maxBackpacks && stratagem.backpack) {
+        if (store.loadout.backpacks >= store.maxBackpacks && stratagem.backpack) {
             continue;
         }
 
         // If already have vehicle re-start loop
-        if (state.loadout.vehicles >= state.maxVehicles && stratagem.vehicle) {
+        if (store.loadout.vehicles >= store.maxVehicles && stratagem.vehicle) {
             continue;
         }
 
         // If already have support weapon re-start loop
-        if (state.loadout.supports >= state.maxSupports && stratagem.support) {
+        if (store.loadout.supports >= store.maxSupports && stratagem.support) {
             continue;
         }
 
-        if (stratagem.backpack) { state.loadout.backpacks++ }
-        if (stratagem.vehicle) { state.loadout.vehicles++ }
-        if (stratagem.support) { state.loadout.supports++ }
+        if (stratagem.backpack) { store.loadout.backpacks++ }
+        if (stratagem.vehicle) { store.loadout.vehicles++ }
+        if (stratagem.support) { store.loadout.supports++ }
 
-        state.loadout.stratagems.push(stratagem)
+        store.loadout.stratagems.push(stratagem)
     }
 }
 
@@ -108,30 +102,34 @@ function flattenItems(array) {
         <div class="row">
             <div class="col-sm">
                 <h4>Primary</h4>
-                <Card :data="state.loadout.primary" :width="379" :height="203" />
+                <Card :data="store.loadout.primary" :width="379" :height="203" />
             </div>
             <div class="col-sm">
                 <h4>Secondary</h4>
-                <Card :data="state.loadout.secondary" :width="379" :height="203" />
+                <Card :data="store.loadout.secondary" :width="379" :height="203" />
             </div>
             <div class="col-sm">
                 <h4>Throwable</h4>
-                <Card :data="state.loadout.throwable" :width="203" :height="203" />
+                <Card :data="store.loadout.throwable" :width="203" :height="203" />
             </div>
         </div>
         <div class="row">
-            <div class="col-sm" v-for="(stratagem, index) in state.loadout.stratagems">
+            <div class="col-sm" v-for="(stratagem, index) in store.loadout.stratagems">
                 <h4>Stratagem {{ index + 1 }}</h4>
                 <Card :data="stratagem" :width="128" :height="128" :isOutlined="true" />
             </div>
             <div class="col-sm">
                 <h4>Booster</h4>
-                <Card :data="state.loadout.booster" :width="128" :height="128" :isOutlined="true" />
+                <Card :data="store.loadout.booster" :width="128" :height="128" :isOutlined="true" />
             </div>
         </div>
-        <div class="row">
-            <div class="controls">
-                <Button @click="getLoadout" label="Get Assigned Loadout" />
+        <div class="row justify-content-sm-center">
+            <div class="col-sm-auto">
+                <InputGroup>
+                    <Button @click="store.unlocksOpen = true" icon="pi pi-lock" />
+                    <Button @click="getLoadout" label="Get Assigned Loadout" />
+                    <Button @click="store.settingsOpen = true" icon="pi pi-cog" />
+                </InputGroup>
             </div>
         </div>
     </div>

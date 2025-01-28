@@ -24,9 +24,15 @@ export type Item = {
   vehicle: boolean;
 };
 
-export const useStore = defineStore("store", {
+export const useStore = defineStore("helldive-data", {
   state: () => ({
     sections: [] as Section[],
+    loadout: {},
+    maxSupports: 1,
+    maxBackpacks: 1,
+    maxVehicles: 1,
+    settingsOpen: false,
+    unlocksOpen: false,
   }),
 
   actions: {
@@ -90,7 +96,6 @@ export const useStore = defineStore("store", {
       }
 
       this.sections.forEach((section) => {
-        console.log(section);
         section.groups.forEach((group) => {
           group.items.forEach((item) => {
             item.locked = data.includes(item.name);
