@@ -37,7 +37,7 @@ export const useDataStore = defineStore("helldive-data", {
       }
 
       this.sections.forEach((section) => {
-        section.groups.forEach((group) => {
+        section.items.forEach((group) => {
           group.items.forEach((item) => {
             item.locked = data.includes(item.name);
           });
@@ -49,7 +49,7 @@ export const useDataStore = defineStore("helldive-data", {
       let data = [];
 
       this.sections.forEach((section) => {
-        section.groups.forEach((group) => {
+        section.items.forEach((group) => {
           group.items.forEach((item) => {
             if (item.locked) {
               data.push(item.name);

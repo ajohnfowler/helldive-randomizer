@@ -18,11 +18,11 @@ const store = useStore();
                 <AccordionContent>
                     <ul v-for="group in section.items">
                         <h3 :class="{ locked: group.items.every((x) => x.locked) }" @click="store.toggleGroup(group)">
-                            {{ group.name }}
+                            <span>{{ group.name }}</span>
                         </h3>
                         <li v-for="item in group.items" :class="{ locked: item.locked }"
                             @click="store.toggleItem(item)">
-                            {{ item.name }}
+                            <span>{{ item.name }}</span>
                         </li>
                     </ul>
                 </AccordionContent>
@@ -32,11 +32,6 @@ const store = useStore();
 </template>
 
 <style scoped>
-.selection {
-    overflow: auto;
-    height: 100%;
-}
-
 .group {
     border: 1px solid gray;
     margin-top: 10px;
@@ -61,5 +56,9 @@ li:nth-child(odd) {
 
 li:hover {
     background-color: rgba(50, 50, 50, 50);
+}
+
+span {
+    cursor: pointer;
 }
 </style>

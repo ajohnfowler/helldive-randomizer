@@ -13,13 +13,21 @@ body {
   font-weight: 800;
   font-style: normal;
   text-align: center;
-  line-height: 1.5;
   text-transform: uppercase;
 
   background-color: rgb(30, 30, 30);
   color: gray;
   margin: 0;
   padding: 0;
+
+  -webkit-user-select: none;
+  /* Safari */
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* IE10+/Edge */
+  user-select: none;
+  /* Standard */
 }
 
 body.sb-expanded {

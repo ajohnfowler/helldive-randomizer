@@ -4,10 +4,6 @@ import InputGroup from 'primevue/inputgroup';
 
 import { useStore } from '@/stores/store';
 import Card from './Card.vue';
-import { reactive } from 'vue';
-import { ref } from "vue";
-
-const settings = ref(false);
 
 const store = useStore()
 
