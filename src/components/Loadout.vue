@@ -15,26 +15,26 @@ getLoadout()
 
 function getLoadout() {
     // Primary
-    let primaries = flattenItems(store.sections[0].groups)
+    let primaries = flattenItems(store.sections[0].items)
     shuffleArray(primaries)
     store.loadout.primary = primaries.pop()
 
     //Secondary
-    let secondaries = flattenItems(store.sections[1].groups)
+    let secondaries = flattenItems(store.sections[1].items)
     shuffleArray(secondaries)
     store.loadout.secondary = secondaries.pop()
 
     // Throwable
-    let throwables = flattenItems(store.sections[2].groups)
+    let throwables = flattenItems(store.sections[2].items)
     shuffleArray(throwables)
     store.loadout.throwable = throwables.pop()
 
     // Stratagems
-    let stratagems = flattenItems(store.sections[3].groups)
+    let stratagems = flattenItems(store.sections[3].items)
     shuffleArray(stratagems)
 
     // Booster
-    let boosters = flattenItems(store.sections[4].groups)
+    let boosters = flattenItems(store.sections[4].items)
     shuffleArray(boosters)
     store.loadout.booster = boosters.pop()
 

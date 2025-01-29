@@ -27,3 +27,6 @@ npm run dev
 ```sh
 npm run build
 ```
+
+## Generate ID's in json files
+run id-generator.py. It will get all json files from assets and add any id's to items that are missing id using uuid

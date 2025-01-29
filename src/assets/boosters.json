@@ -1,63 +1,80 @@
-[
-    {
-        "name": "Boosters",
-        "items": [
-            {
-                "name": "Hellpod Space Optimization",
-                "image": "https://helldivers.wiki.gg/images/2/2a/Hellpod_Space_Optimization_Booster_Icon.svg"
-            },
-            {
-                "name": "Vitality Enhancement",
-                "image": "https://helldivers.wiki.gg/images/f/f6/Vitality_Enhancement_Booster_Icon.svg"
-            },
-            {
-                "name": "UAV Recon Booster",
-                "image": "https://helldivers.wiki.gg/images/e/e7/UAV_Recon_Booster_Booster_Icon.svg"
-            },
-            {
-                "name": "Stamina Enhancement",
-                "image": "https://helldivers.wiki.gg/images/6/68/Stamina_Enhancement_Booster_Icon.svg"
-            },
-            {
-                "name": "Muscle Enhancement",
-                "image": "https://helldivers.wiki.gg/images/8/8b/Muscle_Enhancement_Booster_Icon.svg"
-            },
-            {
-                "name": "Increased Reinforcement Budget",
-                "image": "https://helldivers.wiki.gg/images/6/6d/Increased_Reinforcement_Budget_Booster_Icon.svg"
-            },
-            {
-                "name": "Flexible Reinforcement Budget",
-                "image": "https://helldivers.wiki.gg/images/4/49/Flexible_Reinforcement_Budget_Booster_Icon.svg"
-            },
-            {
-                "name": "Localization Confusion Booster",
-                "image": "https://helldivers.wiki.gg/images/9/9f/Localization_Confusion_Booster_Icon.svg"
-            },
-            {
-                "name": "Expert Extraction Pilot Booster",
-                "image": "https://helldivers.wiki.gg/images/a/af/Expert_Extraction_Pilot_Booster_Icon.svg"
-            },
-            {
-                "name": "Motivational Shocks",
-                "image": "https://helldivers.wiki.gg/images/6/64/Motivational_Shocks_Booster_Icon.svg"
-            },
-            {
-                "name": "Experimental Infusion",
-                "image": "https://helldivers.wiki.gg/images/6/64/Motivational_Shocks_Booster_Icon.svg"
-            },
-            {
-                "name": "Firebomb Hellpods",
-                "image": "https://helldivers.wiki.gg/images/9/9c/Firebomb_Hellpods_Booster_Icon.svg"
-            },
-            {
-                "name": "Dead Sprint",
-                "image": "https://helldivers.wiki.gg/images/4/4a/Dead_Sprint_Booster_Icon.svg"
-            },
-            {
-                "name": "Armed Resupply Pods",
-                "image": "https://helldivers.wiki.gg/images/3/3a/Armed_Resupply_Pods_Booster_Icon.svg"
-            }
-        ]
-    }
-]
+{
+    "name": "boosters",
+    "items": [
+        {
+            "name": "boosters",
+            "items": [
+                {
+                    "name": "Hellpod Space Optimization",
+                    "image": "https://helldivers.wiki.gg/images/2/2a/Hellpod_Space_Optimization_Booster_Icon.svg",
+                    "id": "B208cd"
+                },
+                {
+                    "name": "Vitality Enhancement",
+                    "image": "https://helldivers.wiki.gg/images/f/f6/Vitality_Enhancement_Booster_Icon.svg",
+                    "id": "B03470"
+                },
+                {
+                    "name": "UAV Recon Booster",
+                    "image": "https://helldivers.wiki.gg/images/e/e7/UAV_Recon_Booster_Booster_Icon.svg",
+                    "id": "B8eaf3"
+                },
+                {
+                    "name": "Stamina Enhancement",
+                    "image": "https://helldivers.wiki.gg/images/6/68/Stamina_Enhancement_Booster_Icon.svg",
+                    "id": "Bbbf00"
+                },
+                {
+                    "name": "Muscle Enhancement",
+                    "image": "https://helldivers.wiki.gg/images/8/8b/Muscle_Enhancement_Booster_Icon.svg",
+                    "id": "B71228"
+                },
+                {
+                    "name": "Increased Reinforcement Budget",
+                    "image": "https://helldivers.wiki.gg/images/6/6d/Increased_Reinforcement_Budget_Booster_Icon.svg",
+                    "id": "B4e5c9"
+                },
+                {
+                    "name": "Flexible Reinforcement Budget",
+                    "image": "https://helldivers.wiki.gg/images/4/49/Flexible_Reinforcement_Budget_Booster_Icon.svg",
+                    "id": "B61c62"
+                },
+                {
+                    "name": "Localization Confusion Booster",
+                    "image": "https://helldivers.wiki.gg/images/9/9f/Localization_Confusion_Booster_Icon.svg",
+                    "id": "B9df70"
+                },
+                {
+                    "name": "Expert Extraction Pilot Booster",
+                    "image": "https://helldivers.wiki.gg/images/a/af/Expert_Extraction_Pilot_Booster_Icon.svg",
+                    "id": "B8c039"
+                },
+                {
+                    "name": "Motivational Shocks",
+                    "image": "https://helldivers.wiki.gg/images/6/64/Motivational_Shocks_Booster_Icon.svg",
+                    "id": "B36c7b"
+                },
+                {
+                    "name": "Experimental Infusion",
+                    "image": "https://helldivers.wiki.gg/images/6/64/Motivational_Shocks_Booster_Icon.svg",
+                    "id": "B0d702"
+                },
+                {
+                    "name": "Firebomb Hellpods",
+                    "image": "https://helldivers.wiki.gg/images/9/9c/Firebomb_Hellpods_Booster_Icon.svg",
+                    "id": "Bcacfc"
+                },
+                {
+                    "name": "Dead Sprint",
+                    "image": "https://helldivers.wiki.gg/images/4/4a/Dead_Sprint_Booster_Icon.svg",
+                    "id": "B1dbcf"
+                },
+                {
+                    "name": "Armed Resupply Pods",
+                    "image": "https://helldivers.wiki.gg/images/3/3a/Armed_Resupply_Pods_Booster_Icon.svg",
+                    "id": "B896e5"
+                }
+            ]
+        }
+    ]
+}

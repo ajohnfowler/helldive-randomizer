@@ -6,56 +6,15 @@ import throwables_data from "@/assets/throwables.json";
 import stratagems_data from "@/assets/stratagems.json";
 import boosters_data from "@/assets/boosters.json";
 
-export type Section = {
-  name: string;
-  groups: Group[];
-};
-
-export type Group = {
-  name: string;
-  items: Item[];
-};
-
-export type Item = {
-  id: string;
-  name: string;
-  image: string;
-  locked: boolean;
-  backpack: boolean;
-  vehicle: boolean;
-};
-
-export const useStore = defineStore("helldive-data", {
+export const useDataStore = defineStore("helldive-data", {
   state: () => ({
-    sections: [] as Section[],
-    loadout: {},
-    maxSupports: 1,
-    maxBackpacks: 1,
-    maxVehicles: 1,
-    settingsOpen: false,
-    unlocksOpen: false,
+    data: {},
   }),
 
   actions: {
     init() {
       this.loadFileData();
       this.loadLocalData();
-    },
-
-    toggleGroup(group) {
-      let locked = !group.items.every((x) => x.locked);
-
-      group.items.forEach((item) => {
-        item.locked = locked;
-      });
-
-      this.saveLocalData();
-    },
-
-    toggleItem(item) {
-      item.locked = !item.locked;
-
-      this.saveLocalData();
     },
 
     loadFileData() {
@@ -78,7 +37,7 @@ export const useStore = defineStore("helldive-data", {
       }
 
       this.sections.forEach((section) => {
-        section.items.forEach((group) => {
+        section.groups.forEach((group) => {
           group.items.forEach((item) => {
             item.locked = data.includes(item.name);
           });
@@ -90,7 +49,7 @@ export const useStore = defineStore("helldive-data", {
       let data = [];
 
       this.sections.forEach((section) => {
-        section.items.forEach((group) => {
+        section.groups.forEach((group) => {
           group.items.forEach((item) => {
             if (item.locked) {
               data.push(item.name);

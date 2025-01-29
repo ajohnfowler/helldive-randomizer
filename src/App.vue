@@ -1,10 +1,7 @@
 <script setup>
-import Button from 'primevue/button';
-
 import { useStore } from '@/stores/store';
 
 import Loadout from '@/components/Loadout.vue';
-import Selection from './components/UnlockedDrawer.vue';
 import SettingDialog from './components/SettingDialog.vue';
 import UnlockedDrawer from './components/UnlockedDrawer.vue';
 
@@ -19,14 +16,7 @@ function expandSidebar() {
 <template>
   <header>
     <h1>Helldive Randomizer</h1>
-    <!-- <Button label="Unlocked Equipment" class="sb-button" @click="expandSidebar" /> -->
   </header>
-
-  <!-- <aside>
-    <div class="sb-content">
-      <Selection />
-    </div>
-  </aside> -->
 
   <main>
     <Loadout />
@@ -42,12 +32,3 @@ function expandSidebar() {
     <small>&copy; Copyright 2025, Adam Fowler</small>
   </footer>
 </template>
-
-<!-- <style scoped>
-.sb-button {
-  position: fixed;
-  top: 5px;
-  left: 5px;
-  height: 40px;
-}
-</style> -->

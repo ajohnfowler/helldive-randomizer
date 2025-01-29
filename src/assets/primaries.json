@@ -1,174 +1,210 @@
-[
-    {
-        "name": "Assult Rifle",
-        "items": [
-            {
-                "name": "AR-23 Liberator",
-                "image": "https://helldivers.wiki.gg/images/f/f2/AR-23_Liberator_Weapon_Icon.png"
-            },
-            {
-                "name": "AR-23P Liberator Penetrator",
-                "image": "https://helldivers.wiki.gg/images/f/fa/AR-23P_Liberator_Penetrator_Weapon_Icon.png"
-            },
-            {
-                "name": "AR-23C Liberator Concussive",
-                "image": "https://helldivers.wiki.gg/images/c/ce/AR-23C_Liberator_Concussive_Weapon_Icon.png"
-            },
-            {
-                "name": "StA-52 Assault Rifle",
-                "image": "https://helldivers.wiki.gg/images/8/80/StA-52_Assault_Rifle_Primary_Weaponry.png"
-            },
-            {
-                "name": "AR-23A Liberator Carbine",
-                "image": "https://helldivers.wiki.gg/images/7/7e/AR-23A_Liberator_Carbine_Weapon_Icon.png"
-            },
-            {
-                "name": "AR-61 Tenderizer",
-                "image": "https://helldivers.wiki.gg/images/0/0c/AR-61_Tenderizer_Weapon_Icon.png"
-            },
-            {
-                "name": "BR-14 Adjudicator",
-                "image": "https://helldivers.wiki.gg/images/8/8b/BR-14_Adjudicator_Weapon_Icon.png"
-            }
-        ]
-    },
-    {
-        "name": "Marksman Rifle",
-        "items": [
-            {
-                "name": "R-2124 Constitution",
-                "image": "https://helldivers.wiki.gg/images/1/14/R-2124_Constitution_Weapon_Icon.png"
-            },
-            {
-                "name": "R-63 Diligence",
-                "image": "https://helldivers.wiki.gg/images/c/c0/R-63_Diligence_Weapon_Icon.png"
-            },
-            {
-                "name": "R-63CS Diligence Counter Sniper",
-                "image": "https://helldivers.wiki.gg/images/f/f6/R-63CS_Diligence_Counter_Sniper_Weapon_Icon.png"
-            }
-        ]
-    },
-    {
-        "name": "Sniper Rifle",
-        "items": [
-            {
-                "name": "PLAS-39 Accelerator Rifle",
-                "image": "https://helldivers.wiki.gg/images/a/a3/PLAS-39_Accelerator_Rifle_Primary_Weaponry.png"
-            }
-        ]
-    },
-    {
-        "name": "Submachine Gun",
-        "items": [
-            {
-                "name": "MP-98 Knight",
-                "image": "https://helldivers.wiki.gg/images/2/20/MP-98_Knight_Weapon_Icon.png"
-            },
-            {
-                "name": "StA-11 SMG",
-                "image": "https://helldivers.wiki.gg/images/f/f7/StA-11_SMG_Primary_Weaponry.png"
-            },
-            {
-                "name": "SMG-32 Reprimand",
-                "image": "https://helldivers.wiki.gg/images/f/fd/SMG-32_Reprimand_Weapon_Icon.png"
-            },
-            {
-                "name": "SMG-37 Defender",
-                "image": "https://helldivers.wiki.gg/images/1/10/SMG-37_Defender_Weapon_Icon.png"
-            },
-            {
-                "name": "SMG-72 Pummeler",
-                "image": "https://helldivers.wiki.gg/images/e/e6/SMG-72_Pummeler_Weapon_Icon.png"
-            }
-        ]
-    },
-    {
-        "name": "Shotgun",
-        "items": [
-            {
-                "name": "SG-8 Punisher",
-                "image": "https://helldivers.wiki.gg/images/f/f0/SG-8_Punisher_Weapon_Icon.png"
-            },
-            {
-                "name": "SG-8S Slugger",
-                "image": "https://helldivers.wiki.gg/images/b/bd/SG-8S_Slugger_Weapon_Icon.png"
-            },
-            {
-                "name": "SG-20 Halt",
-                "image": "https://helldivers.wiki.gg/images/a/a8/SG-20_Halt_Weapon_Icon.png"
-            },
-            {
-                "name": "SG-451 Cookout",
-                "image": "https://helldivers.wiki.gg/images/9/9d/SG-451_Cookout_Weapon_Icon.png"
-            },
-            {
-                "name": "SG-225 Breaker",
-                "image": "https://helldivers.wiki.gg/images/7/74/SG-225_Breaker_Weapon_Icon.png"
-            },
-            {
-                "name": "SG-225SP Breaker Spray & Pray",
-                "image": "https://helldivers.wiki.gg/images/b/bc/SG-225SP_Breaker_Spray%26Pray_Weapon_Icon.png"
-            },
-            {
-                "name": "SG-225IE Breaker Incendiary",
-                "image": "https://helldivers.wiki.gg/images/2/22/SG-225IE_Breaker_Incendiary_Weapon_Icon.png"
-            }
-        ]
-    },
-    {
-        "name": "Explosive",
-        "items": [
-            {
-                "name": "CB-9 Exploding Crossbow",
-                "image": "https://helldivers.wiki.gg/images/e/e0/CB-9_Exploding_Crossbow_Weapon_Icon.png"
-            },
-            {
-                "name": "R-36 Eruptor",
-                "image": "https://helldivers.wiki.gg/images/5/53/R-36_Eruptor_Weapon_Icon.png"
-            }
-        ]
-    },
-    {
-        "name": "Energy-Based",
-        "items": [
-            {
-                "name": "SG-8P Punisher Plasma",
-                "image": "https://helldivers.wiki.gg/images/0/03/SG-8P_Punisher_Plasma_Weapon_Icon.png"
-            },
-            {
-                "name": "ARC-12 Blitzer",
-                "image": "https://helldivers.wiki.gg/images/c/c9/ARC-12_Blitzer_Weapon_Icon.png"
-            },
-            {
-                "name": "LAS-5 Scythe",
-                "image": "https://helldivers.wiki.gg/images/f/fb/LAS-5_Scythe_Weapon_Icon.png"
-            },
-            {
-                "name": "LAS-16 Sickle",
-                "image": "https://helldivers.wiki.gg/images/b/b0/LAS-16_Sickle_Weapon_Icon.png"
-            },
-            {
-                "name": "PLAS-1 Scorcher",
-                "image": "https://helldivers.wiki.gg/images/1/11/PLAS-1_Scorcher_Weapon_Icon.png"
-            },
-            {
-                "name": "PLAS-101 Purifier",
-                "image": "https://helldivers.wiki.gg/images/d/d1/PLAS-101_Purifier_Weapon_Icon.png"
-            }
-        ]
-    },
-    {
-        "name": "Speical",
-        "items": [
-            {
-                "name": "FLAM-66 Torcher",
-                "image": "https://helldivers.wiki.gg/images/5/53/FLAM-66_Torcher_Weapon_Icon.png"
-            },
-            {
-                "name": "JAR-5 Dominator",
-                "image": "https://helldivers.wiki.gg/images/d/d5/JAR-5_Dominator_Weapon_Icon.png"
-            }
-        ]
-    }
-]
+{
+    "name": "primaries",
+    "items": [
+        {
+            "name": "Assult Rifle",
+            "items": [
+                {
+                    "name": "AR-23 Liberator",
+                    "image": "https://helldivers.wiki.gg/images/f/f2/AR-23_Liberator_Weapon_Icon.png",
+                    "id": "Ac11d6"
+                },
+                {
+                    "name": "AR-23P Liberator Penetrator",
+                    "image": "https://helldivers.wiki.gg/images/f/fa/AR-23P_Liberator_Penetrator_Weapon_Icon.png",
+                    "id": "A8aa03"
+                },
+                {
+                    "name": "AR-23C Liberator Concussive",
+                    "image": "https://helldivers.wiki.gg/images/c/ce/AR-23C_Liberator_Concussive_Weapon_Icon.png",
+                    "id": "Ac78a6"
+                },
+                {
+                    "name": "StA-52 Assault Rifle",
+                    "image": "https://helldivers.wiki.gg/images/8/80/StA-52_Assault_Rifle_Primary_Weaponry.png",
+                    "id": "Afcf73"
+                },
+                {
+                    "name": "AR-23A Liberator Carbine",
+                    "image": "https://helldivers.wiki.gg/images/7/7e/AR-23A_Liberator_Carbine_Weapon_Icon.png",
+                    "id": "Aa0e41"
+                },
+                {
+                    "name": "AR-61 Tenderizer",
+                    "image": "https://helldivers.wiki.gg/images/0/0c/AR-61_Tenderizer_Weapon_Icon.png",
+                    "id": "A65ff4"
+                },
+                {
+                    "name": "BR-14 Adjudicator",
+                    "image": "https://helldivers.wiki.gg/images/8/8b/BR-14_Adjudicator_Weapon_Icon.png",
+                    "id": "Afc199"
+                }
+            ]
+        },
+        {
+            "name": "Marksman Rifle",
+            "items": [
+                {
+                    "name": "R-2124 Constitution",
+                    "image": "https://helldivers.wiki.gg/images/1/14/R-2124_Constitution_Weapon_Icon.png",
+                    "id": "Mcdeaa"
+                },
+                {
+                    "name": "R-63 Diligence",
+                    "image": "https://helldivers.wiki.gg/images/c/c0/R-63_Diligence_Weapon_Icon.png",
+                    "id": "M4ab8d"
+                },
+                {
+                    "name": "R-63CS Diligence Counter Sniper",
+                    "image": "https://helldivers.wiki.gg/images/f/f6/R-63CS_Diligence_Counter_Sniper_Weapon_Icon.png",
+                    "id": "M82f2a"
+                }
+            ]
+        },
+        {
+            "name": "Sniper Rifle",
+            "items": [
+                {
+                    "name": "PLAS-39 Accelerator Rifle",
+                    "image": "https://helldivers.wiki.gg/images/a/a3/PLAS-39_Accelerator_Rifle_Primary_Weaponry.png",
+                    "id": "S3d5d5"
+                }
+            ]
+        },
+        {
+            "name": "Submachine Gun",
+            "items": [
+                {
+                    "name": "MP-98 Knight",
+                    "image": "https://helldivers.wiki.gg/images/2/20/MP-98_Knight_Weapon_Icon.png",
+                    "id": "S451e6"
+                },
+                {
+                    "name": "StA-11 SMG",
+                    "image": "https://helldivers.wiki.gg/images/f/f7/StA-11_SMG_Primary_Weaponry.png",
+                    "id": "Sb8f04"
+                },
+                {
+                    "name": "SMG-32 Reprimand",
+                    "image": "https://helldivers.wiki.gg/images/f/fd/SMG-32_Reprimand_Weapon_Icon.png",
+                    "id": "Sf4eb6"
+                },
+                {
+                    "name": "SMG-37 Defender",
+                    "image": "https://helldivers.wiki.gg/images/1/10/SMG-37_Defender_Weapon_Icon.png",
+                    "id": "S6dc67"
+                },
+                {
+                    "name": "SMG-72 Pummeler",
+                    "image": "https://helldivers.wiki.gg/images/e/e6/SMG-72_Pummeler_Weapon_Icon.png",
+                    "id": "S9bdf5"
+                }
+            ]
+        },
+        {
+            "name": "Shotgun",
+            "items": [
+                {
+                    "name": "SG-8 Punisher",
+                    "image": "https://helldivers.wiki.gg/images/f/f0/SG-8_Punisher_Weapon_Icon.png",
+                    "id": "S00280"
+                },
+                {
+                    "name": "SG-8S Slugger",
+                    "image": "https://helldivers.wiki.gg/images/b/bd/SG-8S_Slugger_Weapon_Icon.png",
+                    "id": "S9ff75"
+                },
+                {
+                    "name": "SG-20 Halt",
+                    "image": "https://helldivers.wiki.gg/images/a/a8/SG-20_Halt_Weapon_Icon.png",
+                    "id": "S0dc58"
+                },
+                {
+                    "name": "SG-451 Cookout",
+                    "image": "https://helldivers.wiki.gg/images/9/9d/SG-451_Cookout_Weapon_Icon.png",
+                    "id": "S0ac1a"
+                },
+                {
+                    "name": "SG-225 Breaker",
+                    "image": "https://helldivers.wiki.gg/images/7/74/SG-225_Breaker_Weapon_Icon.png",
+                    "id": "S4872e"
+                },
+                {
+                    "name": "SG-225SP Breaker Spray & Pray",
+                    "image": "https://helldivers.wiki.gg/images/b/bc/SG-225SP_Breaker_Spray%26Pray_Weapon_Icon.png",
+                    "id": "S2c6ff"
+                },
+                {
+                    "name": "SG-225IE Breaker Incendiary",
+                    "image": "https://helldivers.wiki.gg/images/2/22/SG-225IE_Breaker_Incendiary_Weapon_Icon.png",
+                    "id": "S3633e"
+                }
+            ]
+        },
+        {
+            "name": "Explosive",
+            "items": [
+                {
+                    "name": "CB-9 Exploding Crossbow",
+                    "image": "https://helldivers.wiki.gg/images/e/e0/CB-9_Exploding_Crossbow_Weapon_Icon.png",
+                    "id": "Ea2e1b"
+                },
+                {
+                    "name": "R-36 Eruptor",
+                    "image": "https://helldivers.wiki.gg/images/5/53/R-36_Eruptor_Weapon_Icon.png",
+                    "id": "Ecbb57"
+                }
+            ]
+        },
+        {
+            "name": "Energy-Based",
+            "items": [
+                {
+                    "name": "SG-8P Punisher Plasma",
+                    "image": "https://helldivers.wiki.gg/images/0/03/SG-8P_Punisher_Plasma_Weapon_Icon.png",
+                    "id": "E8f88c"
+                },
+                {
+                    "name": "ARC-12 Blitzer",
+                    "image": "https://helldivers.wiki.gg/images/c/c9/ARC-12_Blitzer_Weapon_Icon.png",
+                    "id": "E50d43"
+                },
+                {
+                    "name": "LAS-5 Scythe",
+                    "image": "https://helldivers.wiki.gg/images/f/fb/LAS-5_Scythe_Weapon_Icon.png",
+                    "id": "E50a60"
+                },
+                {
+                    "name": "LAS-16 Sickle",
+                    "image": "https://helldivers.wiki.gg/images/b/b0/LAS-16_Sickle_Weapon_Icon.png",
+                    "id": "E3eedc"
+                },
+                {
+                    "name": "PLAS-1 Scorcher",
+                    "image": "https://helldivers.wiki.gg/images/1/11/PLAS-1_Scorcher_Weapon_Icon.png",
+                    "id": "E37e21"
+                },
+                {
+                    "name": "PLAS-101 Purifier",
+                    "image": "https://helldivers.wiki.gg/images/d/d1/PLAS-101_Purifier_Weapon_Icon.png",
+                    "id": "E7b3a1"
+                }
+            ]
+        },
+        {
+            "name": "Special",
+            "items": [
+                {
+                    "name": "FLAM-66 Torcher",
+                    "image": "https://helldivers.wiki.gg/images/5/53/FLAM-66_Torcher_Weapon_Icon.png",
+                    "id": "S1fe37"
+                },
+                {
+                    "name": "JAR-5 Dominator",
+                    "image": "https://helldivers.wiki.gg/images/d/d5/JAR-5_Dominator_Weapon_Icon.png",
+                    "id": "Sc546a"
+                }
+            ]
+        }
+    ]
+}

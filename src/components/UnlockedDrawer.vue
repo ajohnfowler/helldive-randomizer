@@ -16,7 +16,7 @@ const store = useStore();
             <AccordionPanel v-for="(section, index) in store.sections" :value="index" class="group">
                 <AccordionHeader>{{ section.name }}</AccordionHeader>
                 <AccordionContent>
-                    <ul v-for="group in section.groups">
+                    <ul v-for="group in section.items">
                         <h3 :class="{ locked: group.items.every((x) => x.locked) }" @click="store.toggleGroup(group)">
                             {{ group.name }}
                         </h3>
