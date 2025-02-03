@@ -8,7 +8,7 @@ import boosters_data from "@/assets/boosters.json";
 
 export const useDataStore = defineStore("helldive-data", {
   state: () => ({
-    data: {},
+    data: [],
   }),
 
   actions: {
@@ -18,47 +18,65 @@ export const useDataStore = defineStore("helldive-data", {
     },
 
     loadFileData() {
-      this.sections.push(primaries_data);
-      this.sections.push(secondaries_data);
-      this.sections.push(throwables_data);
-      this.sections.push(stratagems_data);
-      this.sections.push(boosters_data);
+      this.data.push(primaries_data);
+      this.data.push(secondaries_data);
+      this.data.push(throwables_data);
+      this.data.push(stratagems_data);
+      this.data.push(boosters_data);
     },
 
     loadLocalData() {
-      let data = [];
+      let result = [];
 
       if (localStorage.getItem("helldive-data")) {
         try {
-          data = JSON.parse(localStorage.getItem("helldive-data"));
+          result = JSON.parse(localStorage.getItem("helldive-data"));
         } catch (e) {
           localStorage.removeItem("helldive-data");
         }
       }
 
-      this.sections.forEach((section) => {
+      this.data.forEach((section) => {
         section.items.forEach((group) => {
           group.items.forEach((item) => {
-            item.locked = data.includes(item.name);
+            item.locked = result.includes(item.name);
           });
         });
       });
     },
 
     saveLocalData() {
-      let data = [];
+      let result = [];
 
-      this.sections.forEach((section) => {
+      this.data.forEach((section) => {
         section.items.forEach((group) => {
           group.items.forEach((item) => {
             if (item.locked) {
-              data.push(item.name);
+              result.push(item.name);
             }
           });
         });
       });
 
-      localStorage.setItem("helldive-data", JSON.stringify(data));
+      localStorage.setItem("helldive-data", JSON.stringify(result));
+    },
+
+    getItems(name: String) {
+      let result = [];
+
+      let section = this.data.find((section) => {
+        return section.name == name;
+      });
+
+      section.items.forEach((group) => {
+        group.items.forEach((item) => {
+          if (!item.locked) {
+            result.push(item);
+          }
+        });
+      });
+
+      return result;
     },
   },
 });

@@ -1,10 +1,10 @@
 <script setup>
 import { RouterView } from 'vue-router'
 
-import { useStore } from '@/stores/store';
+import { useDataStore } from './stores/data';
 
-const store = useStore()
-store.init()
+const dataStore = useDataStore()
+dataStore.init()
 </script>
 
 <template>

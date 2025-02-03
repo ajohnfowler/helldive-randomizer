@@ -6,14 +6,18 @@ import AccordionHeader from 'primevue/accordionheader';
 import AccordionContent from 'primevue/accordioncontent';
 
 import { useStore } from '@/stores/store';
+import { useStateStore } from '@/stores/state';
+import { useDataStore } from '@/stores/data';
 
-const store = useStore();
+// const store = useStore();
+const stateStore = useStateStore();
+const dataStore = useDataStore();
 </script>
 
 <template>
-    <Drawer v-model:visible="store.unlocksOpen" header="Unlocked">
+    <Drawer v-model:visible="stateStore.unlocksOpen" header="Unlocked">
         <Accordion class="selection" value="0">
-            <AccordionPanel v-for="(section, index) in store.sections" :value="index" class="group">
+            <AccordionPanel v-for="(section, index) in dataStore.data" :value="index" class="group">
                 <AccordionHeader>{{ section.name }}</AccordionHeader>
                 <AccordionContent>
                     <ul v-for="group in section.items">

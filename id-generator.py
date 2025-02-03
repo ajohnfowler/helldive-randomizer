@@ -9,10 +9,10 @@ for file in json_files:
     with open(filename) as f:
         data = json.load(f)
 
-        for group in data:
+        for group in data['items']:
             for item in group['items']:
                 if 'id' not in item:
-                    item['id'] = group['name'][0] + str(uuid.uuid4())[:5]
+                    item['id'] = group['name'][0].lower() + str(uuid.uuid4())[:3]
     
     # create randomly named temporary file to avoid 
     # interference with other thread/asynchronous request
