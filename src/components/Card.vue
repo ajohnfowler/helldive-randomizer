@@ -6,7 +6,7 @@ function imageSrc(section, data) {
     if (section == "boosters") {
         format = '.svg'
     }
-    let fileName = 'src/assets/images/' + section + '/' + data.name.replace(/ |\//g, '_') + format
+    let fileName = 'assets/images/' + section + '/' + data.name.replace(/ |\//g, '_') + format
 
     fileName = fileName.replaceAll('"', '')
     return fileName
