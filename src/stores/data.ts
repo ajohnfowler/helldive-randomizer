@@ -17,6 +17,22 @@ export const useDataStore = defineStore("helldive-data", {
       this.loadLocalData();
     },
 
+    toggleGroup(group) {
+      let locked = !group.items.every((x) => x.locked);
+
+      group.items.forEach((item) => {
+        item.locked = locked;
+      });
+
+      this.saveLocalData();
+    },
+
+    toggleItem(item) {
+      item.locked = !item.locked;
+
+      this.saveLocalData();
+    },
+
     loadFileData() {
       this.data.push(primaries_data);
       this.data.push(secondaries_data);

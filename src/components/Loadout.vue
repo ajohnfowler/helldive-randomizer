@@ -12,7 +12,6 @@ const stateStore = useStateStore()
 let params = new URLSearchParams(document.location.search);
 const code = params.get("loadout");
 if (code) {
-    console.log(code)
     loadoutStore.loadCode(code)
 } else {
     loadoutStore.getLoadout()
@@ -23,26 +22,26 @@ if (code) {
     <div class="container">
         <div class="row">
             <div class="col-sm">
-                <h4>Primary</h4>
-                <Card :data="loadoutStore.primary" :width="379" :height="203" />
+                <Card :section="'primaries'" :title="'Primary'" :data="loadoutStore.primary" :width="379"
+                    :height="203" />
             </div>
             <div class="col-sm">
-                <h4>Secondary</h4>
-                <Card :data="loadoutStore.secondary" :width="379" :height="203" />
+                <Card :section="'secondaries'" :title="'Secondary'" :data="loadoutStore.secondary" :width="379"
+                    :height="203" />
             </div>
             <div class="col-sm">
-                <h4>Throwable</h4>
-                <Card :data="loadoutStore.throwable" :width="203" :height="203" />
+                <Card :section="'throwables'" :title="'Throwable'" :data="loadoutStore.throwable" :width="203"
+                    :height="203" />
             </div>
         </div>
         <div class="row">
             <div class="col-sm" v-for="(stratagem, index) in loadoutStore.stratagems">
-                <h4>Stratagem {{ index + 1 }}</h4>
-                <Card :data="stratagem" :width="128" :height="128" :isOutlined="true" />
+                <Card :section="'stratagems'" :title="'Stratagem ' + (index + 1)" :data="stratagem" :width="128"
+                    :height="128" :isOutlined="true" />
             </div>
             <div class="col-sm">
-                <h4>Booster</h4>
-                <Card :data="loadoutStore.booster" :width="128" :height="128" :isOutlined="true" />
+                <Card :section="'boosters'" :title="'Booster'" :data="loadoutStore.booster" :width="128" :height="128"
+                    :isOutlined="true" />
             </div>
         </div>
         <div class="row justify-content-sm-center">

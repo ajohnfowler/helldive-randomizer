@@ -5,11 +5,9 @@ import AccordionPanel from 'primevue/accordionpanel';
 import AccordionHeader from 'primevue/accordionheader';
 import AccordionContent from 'primevue/accordioncontent';
 
-import { useStore } from '@/stores/store';
 import { useStateStore } from '@/stores/state';
 import { useDataStore } from '@/stores/data';
 
-// const store = useStore();
 const stateStore = useStateStore();
 const dataStore = useDataStore();
 </script>
@@ -21,11 +19,12 @@ const dataStore = useDataStore();
                 <AccordionHeader>{{ section.name }}</AccordionHeader>
                 <AccordionContent>
                     <ul v-for="group in section.items">
-                        <h3 :class="{ locked: group.items.every((x) => x.locked) }" @click="store.toggleGroup(group)">
+                        <h3 :class="{ locked: group.items.every((x) => x.locked) }"
+                            @click="dataStore.toggleGroup(group)">
                             <span>{{ group.name }}</span>
                         </h3>
                         <li v-for="item in group.items" :class="{ locked: item.locked }"
-                            @click="store.toggleItem(item)">
+                            @click="dataStore.toggleItem(item)">
                             <span>{{ item.name }}</span>
                         </li>
                     </ul>

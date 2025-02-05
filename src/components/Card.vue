@@ -1,10 +1,25 @@
 <script setup>
-defineProps(['data', 'width', 'height', 'isOutlined']);
+const props = defineProps(['section', 'title', 'data', 'width', 'height', 'isOutlined']);
+
+function imageSrc(section, data) {
+    let format = '.png'
+    if (section == "boosters") {
+        format = '.svg'
+    }
+    let fileName = 'src/assets/images/' + section + '/' + data.name.replace(/ |\//g, '_') + format
+
+    fileName = fileName.replaceAll('"', '')
+    return fileName
+}
 </script>
 
 <template>
-    <img :class="{ outlined: isOutlined }" :src=data.image :alt=data.name :width=width :height=height>
-    <p>{{ data.name }}</p>
+    <div class="item">
+        <h4>{{ title }}</h4>
+        <img :class="{ outlined: isOutlined }" :src="imageSrc(section, data)" :alt=data.name :width=width
+            :height=height>
+        <p>{{ data.name }}</p>
+    </div>
 </template>
 
 <style scoped>
