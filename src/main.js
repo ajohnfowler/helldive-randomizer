@@ -9,9 +9,11 @@ import Aura from '@primevue/themes/aura';
 import App from './App.vue'
 import router from './router';
 
-const app = createApp(App)
+import ToastService from 'primevue/toastservice';
 
-app.use(createPinia())
+const app = createApp(App);
+
+app.use(createPinia());
 
 app.use(PrimeVue, {
     theme: {
@@ -19,6 +21,8 @@ app.use(PrimeVue, {
     }
 });
 
-app.use(router)
+app.use(router);
+
+app.use(ToastService);
 
 app.mount('#app')
