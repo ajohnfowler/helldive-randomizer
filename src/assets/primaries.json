@@ -6,37 +6,30 @@
             "items": [
                 {
                     "name": "AR-23 Liberator",
-                    "image": "https://helldivers.wiki.gg/images/4/4b/AR-23_Liberator_Primary_Weaponry.png",
                     "id": "aefc"
                 },
                 {
                     "name": "AR-23P Liberator Penetrator",
-                    "image": "https://helldivers.wiki.gg/images/f/fa/AR-23P_Liberator_Penetrator_Weapon_Icon.png",
                     "id": "aa13"
                 },
                 {
                     "name": "AR-23C Liberator Concussive",
-                    "image": "https://helldivers.wiki.gg/images/c/ce/AR-23C_Liberator_Concussive_Weapon_Icon.png",
                     "id": "a529"
                 },
                 {
                     "name": "StA-52 Assault Rifle",
-                    "image": "https://helldivers.wiki.gg/images/8/80/StA-52_Assault_Rifle_Primary_Weaponry.png",
                     "id": "ac38"
                 },
                 {
                     "name": "AR-23A Liberator Carbine",
-                    "image": "https://helldivers.wiki.gg/images/7/7e/AR-23A_Liberator_Carbine_Weapon_Icon.png",
                     "id": "ab25"
                 },
                 {
                     "name": "AR-61 Tenderizer",
-                    "image": "https://helldivers.wiki.gg/images/0/0c/AR-61_Tenderizer_Weapon_Icon.png",
                     "id": "af88"
                 },
                 {
                     "name": "BR-14 Adjudicator",
-                    "image": "https://helldivers.wiki.gg/images/8/8b/BR-14_Adjudicator_Weapon_Icon.png",
                     "id": "a41a"
                 }
             ]
@@ -46,17 +39,14 @@
             "items": [
                 {
                     "name": "R-2124 Constitution",
-                    "image": "https://helldivers.wiki.gg/images/1/14/R-2124_Constitution_Weapon_Icon.png",
                     "id": "m609"
                 },
                 {
                     "name": "R-63 Diligence",
-                    "image": "https://helldivers.wiki.gg/images/c/c0/R-63_Diligence_Weapon_Icon.png",
                     "id": "mde0"
                 },
                 {
                     "name": "R-63CS Diligence Counter Sniper",
-                    "image": "https://helldivers.wiki.gg/images/f/f6/R-63CS_Diligence_Counter_Sniper_Weapon_Icon.png",
                     "id": "m313"
                 }
             ]
@@ -66,7 +56,6 @@
             "items": [
                 {
                     "name": "PLAS-39 Accelerator Rifle",
-                    "image": "https://helldivers.wiki.gg/images/a/a3/PLAS-39_Accelerator_Rifle_Primary_Weaponry.png",
                     "id": "s8a2"
                 }
             ]
@@ -76,27 +65,22 @@
             "items": [
                 {
                     "name": "MP-98 Knight",
-                    "image": "https://helldivers.wiki.gg/images/2/20/MP-98_Knight_Weapon_Icon.png",
                     "id": "s122"
                 },
                 {
                     "name": "StA-11 SMG",
-                    "image": "https://helldivers.wiki.gg/images/f/f7/StA-11_SMG_Primary_Weaponry.png",
                     "id": "sa14"
                 },
                 {
                     "name": "SMG-32 Reprimand",
-                    "image": "https://helldivers.wiki.gg/images/f/fd/SMG-32_Reprimand_Weapon_Icon.png",
                     "id": "sbda"
                 },
                 {
                     "name": "SMG-37 Defender",
-                    "image": "https://helldivers.wiki.gg/images/1/10/SMG-37_Defender_Weapon_Icon.png",
                     "id": "sbd9"
                 },
                 {
                     "name": "SMG-72 Pummeler",
-                    "image": "https://helldivers.wiki.gg/images/e/e6/SMG-72_Pummeler_Weapon_Icon.png",
                     "id": "s2fc"
                 }
             ]
@@ -106,37 +90,30 @@
             "items": [
                 {
                     "name": "SG-8 Punisher",
-                    "image": "https://helldivers.wiki.gg/images/f/f0/SG-8_Punisher_Weapon_Icon.png",
                     "id": "s9f2"
                 },
                 {
                     "name": "SG-8S Slugger",
-                    "image": "https://helldivers.wiki.gg/images/b/bd/SG-8S_Slugger_Weapon_Icon.png",
                     "id": "s55a"
                 },
                 {
                     "name": "SG-20 Halt",
-                    "image": "https://helldivers.wiki.gg/images/a/a8/SG-20_Halt_Weapon_Icon.png",
                     "id": "s701"
                 },
                 {
                     "name": "SG-451 Cookout",
-                    "image": "https://helldivers.wiki.gg/images/9/9d/SG-451_Cookout_Weapon_Icon.png",
                     "id": "s49e"
                 },
                 {
                     "name": "SG-225 Breaker",
-                    "image": "https://helldivers.wiki.gg/images/7/74/SG-225_Breaker_Weapon_Icon.png",
                     "id": "s97c"
                 },
                 {
                     "name": "SG-225SP Breaker Spray & Pray",
-                    "image": "https://helldivers.wiki.gg/images/b/bc/SG-225SP_Breaker_Spray%26Pray_Weapon_Icon.png",
                     "id": "s35d"
                 },
                 {
                     "name": "SG-225IE Breaker Incendiary",
-                    "image": "https://helldivers.wiki.gg/images/2/22/SG-225IE_Breaker_Incendiary_Weapon_Icon.png",
                     "id": "s16d"
                 }
             ]
@@ -146,12 +123,10 @@
             "items": [
                 {
                     "name": "CB-9 Exploding Crossbow",
-                    "image": "https://helldivers.wiki.gg/images/e/e0/CB-9_Exploding_Crossbow_Weapon_Icon.png",
                     "id": "e029"
                 },
                 {
                     "name": "R-36 Eruptor",
-                    "image": "https://helldivers.wiki.gg/images/5/53/R-36_Eruptor_Weapon_Icon.png",
                     "id": "ee38"
                 }
             ]
@@ -161,32 +136,30 @@
             "items": [
                 {
                     "name": "SG-8P Punisher Plasma",
-                    "image": "https://helldivers.wiki.gg/images/0/03/SG-8P_Punisher_Plasma_Weapon_Icon.png",
                     "id": "e45c"
                 },
                 {
                     "name": "ARC-12 Blitzer",
-                    "image": "https://helldivers.wiki.gg/images/c/c9/ARC-12_Blitzer_Weapon_Icon.png",
                     "id": "ed6b"
                 },
                 {
                     "name": "LAS-5 Scythe",
-                    "image": "https://helldivers.wiki.gg/images/f/fb/LAS-5_Scythe_Weapon_Icon.png",
                     "id": "e4a7"
                 },
                 {
                     "name": "LAS-16 Sickle",
-                    "image": "https://helldivers.wiki.gg/images/b/b0/LAS-16_Sickle_Weapon_Icon.png",
                     "id": "e312"
                 },
                 {
+                    "name": "LAS-17 Double-Edge Sickle",
+                    "id": "e42a"
+                },
+                {
                     "name": "PLAS-1 Scorcher",
-                    "image": "https://helldivers.wiki.gg/images/1/11/PLAS-1_Scorcher_Weapon_Icon.png",
                     "id": "e0f1"
                 },
                 {
                     "name": "PLAS-101 Purifier",
-                    "image": "https://helldivers.wiki.gg/images/d/d1/PLAS-101_Purifier_Weapon_Icon.png",
                     "id": "ecb9"
                 }
             ]
@@ -196,12 +169,10 @@
             "items": [
                 {
                     "name": "FLAM-66 Torcher",
-                    "image": "https://helldivers.wiki.gg/images/5/53/FLAM-66_Torcher_Weapon_Icon.png",
                     "id": "s696"
                 },
                 {
                     "name": "JAR-5 Dominator",
-                    "image": "https://helldivers.wiki.gg/images/d/d5/JAR-5_Dominator_Weapon_Icon.png",
                     "id": "s081"
                 }
             ]

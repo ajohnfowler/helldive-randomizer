@@ -5,7 +5,7 @@ json_files = ['primaries.json', 'secondaries.json', 'throwables.json', 'stratage
 ids = []
 
 for file in json_files:
-    filename = 'src/assets/' + file
+    filename = '../src/assets/' + file
     with open(filename) as f:
         data = json.load(f)
 
