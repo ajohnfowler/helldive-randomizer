@@ -6,72 +6,58 @@
             "items": [
                 {
                     "name": "Hellpod Space Optimization",
-                    "image": "https://helldivers.wiki.gg/images/2/2a/Hellpod_Space_Optimization_Booster_Icon.svg",
                     "id": "bbc6"
                 },
                 {
                     "name": "Vitality Enhancement",
-                    "image": "https://helldivers.wiki.gg/images/f/f6/Vitality_Enhancement_Booster_Icon.svg",
                     "id": "b537"
                 },
                 {
                     "name": "UAV Recon Booster",
-                    "image": "https://helldivers.wiki.gg/images/e/e7/UAV_Recon_Booster_Booster_Icon.svg",
                     "id": "b9ee"
                 },
                 {
                     "name": "Stamina Enhancement",
-                    "image": "https://helldivers.wiki.gg/images/6/68/Stamina_Enhancement_Booster_Icon.svg",
                     "id": "bcae"
                 },
                 {
                     "name": "Muscle Enhancement",
-                    "image": "https://helldivers.wiki.gg/images/8/8b/Muscle_Enhancement_Booster_Icon.svg",
                     "id": "bdb1"
                 },
                 {
                     "name": "Increased Reinforcement Budget",
-                    "image": "https://helldivers.wiki.gg/images/6/6d/Increased_Reinforcement_Budget_Booster_Icon.svg",
                     "id": "b5c0"
                 },
                 {
                     "name": "Flexible Reinforcement Budget",
-                    "image": "https://helldivers.wiki.gg/images/4/49/Flexible_Reinforcement_Budget_Booster_Icon.svg",
                     "id": "bacd"
                 },
                 {
                     "name": "Localization Confusion Booster",
-                    "image": "https://helldivers.wiki.gg/images/9/9f/Localization_Confusion_Booster_Icon.svg",
                     "id": "b33a"
                 },
                 {
                     "name": "Expert Extraction Pilot Booster",
-                    "image": "https://helldivers.wiki.gg/images/a/af/Expert_Extraction_Pilot_Booster_Icon.svg",
                     "id": "bc21"
                 },
                 {
                     "name": "Motivational Shocks",
-                    "image": "https://helldivers.wiki.gg/images/6/64/Motivational_Shocks_Booster_Icon.svg",
                     "id": "b698"
                 },
                 {
                     "name": "Experimental Infusion",
-                    "image": "https://helldivers.wiki.gg/images/6/64/Motivational_Shocks_Booster_Icon.svg",
                     "id": "bce9"
                 },
                 {
                     "name": "Firebomb Hellpods",
-                    "image": "https://helldivers.wiki.gg/images/9/9c/Firebomb_Hellpods_Booster_Icon.svg",
                     "id": "b4f0"
                 },
                 {
                     "name": "Dead Sprint",
-                    "image": "https://helldivers.wiki.gg/images/4/4a/Dead_Sprint_Booster_Icon.svg",
                     "id": "becf"
                 },
                 {
                     "name": "Armed Resupply Pods",
-                    "image": "https://helldivers.wiki.gg/images/3/3a/Armed_Resupply_Pods_Booster_Icon.svg",
                     "id": "b0e4"
                 }
             ]

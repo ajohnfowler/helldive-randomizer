@@ -18,7 +18,7 @@ const loadoutStore = useLoadoutStore()
 const stateStore = useStateStore()
 
 const shareDialog = ref();
-const url = ref(window.location.href)
+let url = ref(window.location.href)
 
 let params = new URLSearchParams(document.location.search);
 const code = params.get("loadout");
@@ -29,12 +29,13 @@ if (code) {
 }
 
 function toggle(event) {
+    url = ref(window.location.href)
     shareDialog.value.toggle(event);
 }
 
 function copyUrl() {
-    navigator.clipboard.writeText(url.value);
-    toast.add({ severity: 'secondary', summary: 'Loadout Copied!', detail: url.value, life: 3000 });
+    navigator.clipboard.writeText(window.location.href);
+    toast.add({ severity: 'secondary', summary: 'Loadout Copied!', detail: window.location.href, life: 3000 });
 }
 </script>
 
