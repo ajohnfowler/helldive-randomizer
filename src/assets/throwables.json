@@ -6,17 +6,14 @@
             "items": [
                 {
                     "name": "G-6 Frag",
-                    "image": "https://helldivers.wiki.gg/images/b/b7/G-6_Frag_Grenade_Icon.png",
                     "id": "s4cb"
                 },
                 {
                     "name": "G-12 High Explosive",
-                    "image": "https://helldivers.wiki.gg/images/7/7d/G-12_High_Explosive_Grenade_Icon.png",
                     "id": "s1a7"
                 },
                 {
                     "name": "G-10 Incendiary",
-                    "image": "https://helldivers.wiki.gg/images/5/59/G-10_Incendiary_Grenade_Icon.png",
                     "id": "sb4b"
                 }
             ]
@@ -26,37 +23,34 @@
             "items": [
                 {
                     "name": "G-16 Impact",
-                    "image": "https://helldivers.wiki.gg/images/6/63/G-16_Impact_Grenade_Icon.png",
                     "id": "sb8a"
                 },
                 {
                     "name": "G-13 Incendiary Impact",
-                    "image": "https://helldivers.wiki.gg/images/0/08/G-13_Incendiary_Impact_Grenade_Icon.png",
                     "id": "s361"
                 },
                 {
                     "name": "G-23 Stun",
-                    "image": "https://helldivers.wiki.gg/images/3/36/G-23_Stun_Grenade_Icon.png",
                     "id": "s1e6"
                 },
                 {
                     "name": "G-4 Gas",
-                    "image": "https://helldivers.wiki.gg/images/4/4a/G-4_Gas_Throwable_Icon.png",
                     "id": "se74"
                 },
                 {
+                    "name": "G-50 Seeker",
+                    "id": "s32e"
+                },
+                {
                     "name": "G-3 Smoke",
-                    "image": "https://helldivers.wiki.gg/images/6/64/G-3_Smoke_Grenade_Icon.png",
                     "id": "s086"
                 },
                 {
                     "name": "G-123 Thermite",
-                    "image": "https://helldivers.wiki.gg/images/9/9e/G-123_Thermite_Grenade_Icon.png",
                     "id": "saa5"
                 },
                 {
                     "name": "K-2 Throwing Knife",
-                    "image": "https://helldivers.wiki.gg/images/c/cb/K-2_Throwing_Knife_Throwable_Icon.png",
                     "id": "s5b7"
                 }
             ]

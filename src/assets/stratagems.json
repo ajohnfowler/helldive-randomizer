@@ -327,6 +327,16 @@
                     "id": "u232"
                 }
             ]
+        },
+        {
+            "name": "Servants of Freedom",
+            "items": [
+                {
+                    "name": "B-100 Portable Hellbomb",
+                    "backpack": true,
+                    "id": "s816"
+                }
+            ]
         }
     ]
 }

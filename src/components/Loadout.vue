@@ -1,6 +1,14 @@
 <script setup>
+import { ref } from "vue";
 import Button from 'primevue/button';
 import InputGroup from 'primevue/inputgroup';
+import InputGroupAddon from 'primevue/inputgroupaddon';
+import InputText from 'primevue/inputtext';
+import OverlayPanel from 'primevue/overlaypanel';
+
+import { useToast } from 'primevue/usetoast';
+
+const toast = useToast();
 
 import Card from './Card.vue';
 import { useLoadoutStore } from '@/stores/loadout';
@@ -9,12 +17,25 @@ import { useStateStore } from '@/stores/state';
 const loadoutStore = useLoadoutStore()
 const stateStore = useStateStore()
 
+const shareDialog = ref();
+let url = ref(window.location.href)
+
 let params = new URLSearchParams(document.location.search);
 const code = params.get("loadout");
 if (code) {
     loadoutStore.loadCode(code)
 } else {
     loadoutStore.getLoadout()
+}
+
+function toggle(event) {
+    url = ref(window.location.href)
+    shareDialog.value.toggle(event);
+}
+
+function copyUrl() {
+    navigator.clipboard.writeText(window.location.href);
+    toast.add({ severity: 'secondary', summary: 'Loadout Copied!', detail: window.location.href, life: 3000 });
 }
 </script>
 
@@ -50,10 +71,23 @@ if (code) {
                     <Button @click="stateStore.unlocksOpen = true" icon="pi pi-lock" />
                     <Button @click="loadoutStore.getLoadout" label="Get Assigned Loadout" />
                     <Button @click="stateStore.settingsOpen = true" icon="pi pi-cog" />
+                    <Button @click="toggle" icon="pi pi-link" />
                 </InputGroup>
             </div>
         </div>
     </div>
+    <OverlayPanel ref="shareDialog" appendTo="body">
+        <div>
+            <span class="font-medium text-900 block mb-2">Share this loadout</span>
+            <InputGroup>
+                <InputText :value="url" readonly class="w-25rem">
+                </InputText>
+                <InputGroupAddon>
+                    <Button @click="copyUrl" icon="pi pi-copy" />
+                </InputGroupAddon>
+            </InputGroup>
+        </div>
+    </OverlayPanel>
 </template>
 
 <style scoped>
