@@ -51,17 +51,29 @@ export const useLoadoutStore = defineStore("helldive-loadout", {
         let stratagem = stratagems.pop();
 
         // If already have backpack re-start loop
-        if (this.backpacks >= stateStore.maxBackpacks && stratagem.backpack) {
+        if (
+          this.stratagems.filter((item) => item.backpack).length >=
+            stateStore.maxBackpacks &&
+          stratagem.backpack
+        ) {
           continue;
         }
 
         // If already have vehicle re-start loop
-        if (this.vehicles >= stateStore.maxVehicles && stratagem.vehicle) {
+        if (
+          this.stratagems.filter((item) => item.vehicle).length >=
+            stateStore.maxVehicles &&
+          stratagem.vehicle
+        ) {
           continue;
         }
 
         // If already have support weapon re-start loop
-        if (this.supports >= stateStore.maxSupports && stratagem.support) {
+        if (
+          this.stratagems.filter((item) => item.support).length >=
+            stateStore.maxSupports &&
+          stratagem.support
+        ) {
           continue;
         }
 
