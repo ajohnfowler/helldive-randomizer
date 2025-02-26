@@ -12,6 +12,8 @@ for file in json_files:
         for group in data['items']:
             for item in group['items']:
                 if 'id' not in item:
+                    new_id = group['name'][0].lower() + str(uuid.uuid4())[:3]
+                    print (item['name'], ' --> ', new_id)
                     item['id'] = group['name'][0].lower() + str(uuid.uuid4())[:3]
     
     # create randomly named temporary file to avoid 

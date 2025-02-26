@@ -32,6 +32,10 @@
                 {
                     "name": "CQC-30 Stun Baton",
                     "id": "m0ba"
+                },
+                {
+                    "name": "CQC-5 Combat Hatchet",
+                    "id": "m2c0"
                 }
             ]
         },

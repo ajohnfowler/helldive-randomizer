@@ -10,5 +10,7 @@ for folder in folders:
         new_name = name
         for s in substrings:
             new_name = new_name.replace(s, '')
+        
+        if new_name != name:
+            print (name, " --> ", new_name)
         os.rename(directory + name, directory + new_name)
-        print (name, new_name)
